@@ -99,7 +99,7 @@
                 Take a free ASO self-assessment
                 <span aria-hidden="true">scan</span>
               </a>
-              <a class="button secondary" href="#cloudflare">
+              <a class="button secondary" href="#readiness">
                 Compare agent readiness checks
                 <span aria-hidden="true">map</span>
               </a>
@@ -473,17 +473,16 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
         </div>
       </section>
 
-      <section class="band compare-band" id="cloudflare">
+      <section class="band compare-band" id="readiness">
         <div class="section-heading align-left">
-          <p class="section-label">Agent readiness map</p>
-          <h2>A readiness check tells you what is missing. ASO tells you what it means.</h2>
+          <p class="section-label">Readiness vs ASO</p>
+          <h2>Agent readiness is technical compliance. ASO is agent selection.</h2>
           <p>
             Agent readiness scanners are a useful first pass. They check whether
             agents can find a site, read it, authenticate against it, discover
             protocols, and understand commerce surfaces. ASO turns the same
-            signal hunt into a public score, a repair map, and a standard your
-            team can point to before competitors start using "agent-ready" as a
-            trust badge.
+            signal hunt into a selection framework: identity, trust, commerce,
+            reputation, memory, traffic, and conversion evidence.
           </p>
         </div>
         <div class="compare-grid" aria-label="Agent readiness checks mapped to ASO">
@@ -507,6 +506,39 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
             <h3>ASO certification</h3>
             <p>Certification answers: what was verified, when, and whether the claim survives inspection?</p>
           </article>
+        </div>
+        <div class="readiness-layers" aria-label="Three layers of agent visibility">
+          <article>
+            <span>Layer 1</span>
+            <h3>Agent Readiness</h3>
+            <p>Can agents technically inspect, read, authenticate, and discover the service?</p>
+          </article>
+          <article>
+            <span>Layer 2</span>
+            <h3>Agent Signal Optimization</h3>
+            <p>Will agents understand, trust, compare, choose, pay for, and remember the service?</p>
+          </article>
+          <article>
+            <span>Layer 3</span>
+            <h3>Agent Performance</h3>
+            <p>Are agents actually finding, citing, invoking, converting, and returning?</p>
+          </article>
+        </div>
+        <div class="readiness-table" role="table" aria-label="How ASO differs from agent readiness">
+          <div role="row">
+            <span role="columnheader">Signal</span>
+            <span role="columnheader">Agent Readiness</span>
+            <span role="columnheader">ASO</span>
+          </div>
+          <div role="row"><span>robots.txt</span><span>Yes</span><span>Yes</span></div>
+          <div role="row"><span>sitemap.xml</span><span>Yes</span><span>Yes</span></div>
+          <div role="row"><span>llms.txt and Markdown access</span><span>Yes</span><span>Yes</span></div>
+          <div role="row"><span>MCP, API, and auth discovery</span><span>Yes</span><span>Yes</span></div>
+          <div role="row"><span>Trust and provenance</span><span>Partial</span><span>Yes</span></div>
+          <div role="row"><span>Reputation and third-party evidence</span><span>No</span><span>Yes</span></div>
+          <div role="row"><span>Commerce readiness and purchase rules</span><span>Partial</span><span>Yes</span></div>
+          <div role="row"><span>Memory and return paths</span><span>No</span><span>Yes</span></div>
+          <div role="row"><span>Agent traffic, citations, and conversions</span><span>No</span><span>Yes</span></div>
         </div>
         <div class="cta compare-cta">
           <a class="button primary" href="#scanner">

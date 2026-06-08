@@ -863,6 +863,81 @@ pre {
   color: #59616b;
 }
 
+.readiness-layers {
+  width: min(1180px, 100%);
+  margin: 14px auto 0;
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr 0.9fr;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--line);
+}
+
+.readiness-layers article {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  background: #151a1d;
+}
+
+.readiness-layers article:nth-child(2) {
+  background: rgba(100, 185, 168, 0.1);
+}
+
+.readiness-layers span,
+.readiness-table div:first-child span {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.readiness-layers p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.readiness-table {
+  width: min(1180px, 100%);
+  margin: 14px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--line);
+}
+
+.readiness-table div {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.3fr) minmax(120px, 0.55fr) minmax(120px, 0.55fr);
+  gap: 1px;
+}
+
+.readiness-table span {
+  padding: 14px 16px;
+  background: #151a1d;
+  color: #c5ccd0;
+}
+
+.readiness-table div:first-child span {
+  color: var(--accent-strong);
+  background: #111619;
+}
+
+.readiness-table div span:first-child {
+  color: var(--ink);
+  font-weight: 720;
+}
+
+.readiness-table div span:last-child {
+  color: var(--accent-strong);
+}
+
 .compare-cta {
   width: min(1180px, 100%);
   margin: 22px auto 0;
@@ -1392,6 +1467,7 @@ input[type="checkbox"] {
   .cta,
   .scanner,
   .compare-grid,
+  .readiness-layers,
   .signal-graphic,
   .standards-grid,
   .applicability-panel,
@@ -1449,6 +1525,7 @@ input[type="checkbox"] {
   .comparison-ledger div,
   .evolution-table div,
   .roadmap-list article,
+  .readiness-table div,
   .implementation-table div {
     grid-template-columns: 1fr;
     gap: 8px;

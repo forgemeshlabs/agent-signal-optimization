@@ -60,6 +60,30 @@ ASO tracks the public standards and artifacts agents increasingly inspect:
 | Commerce | Makes offers, pricing, and purchase paths machine-readable | payment manifests, x402, MPP, UCP, ACP |
 | Verification | Proves the claim is real and current | syntax, reachability, consistency, provenance, status, reputation, registry evidence |
 
+## Agent Readiness vs ASO
+
+Agent readiness asks whether agents can technically inspect, read, authenticate, and discover a service.
+
+ASO asks whether agents will choose, trust, cite, invoke, buy from, and remember the service.
+
+| Topic | Agent Readiness | ASO |
+| --- | --- | --- |
+| `robots.txt` | Yes | Yes |
+| `sitemap.xml` | Yes | Yes |
+| `llms.txt` and Markdown access | Yes | Yes |
+| MCP, API, and auth discovery | Yes | Yes |
+| Trust and provenance | Partial | Yes |
+| Reputation and third-party evidence | No | Yes |
+| Commerce readiness and purchase rules | Partial | Yes |
+| Memory and return paths | No | Yes |
+| Agent traffic, citations, and conversions | No | Yes |
+
+Layer model:
+
+1. Agent Readiness: technical compliance.
+2. Agent Signal Optimization: discovery, identity, trust, commerce, reputation, and memory.
+3. Agent Performance: actual agent traffic, citations, invocations, conversions, and returns.
+
 ## What Applies When
 
 Not every site needs every signal immediately.

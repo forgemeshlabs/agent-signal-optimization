@@ -192,6 +192,32 @@ ASO is not one file. It is the full public signal stack an agent can inspect bef
 
 The phase-1 ASO scanner is a self-assessment of visible basics. A full ASO crawler should automate this stack, map failures to the Agent Readiness Index, and generate a remediation plan.
 
+### How ASO Differs From Agent Readiness
+
+Agent readiness is technical compliance: can agents find, read, authenticate, and discover what is available?
+
+Agent Signal Optimization is broader: will agents choose the service, trust it, cite it, invoke it, pay for it, and return to it?
+
+The distinction mirrors the difference between Lighthouse and SEO. Technical readiness matters, but technical readiness alone does not prove visibility, authority, reputation, conversion, or long-term selection.
+
+| Topic | Agent Readiness | ASO |
+|-------|-----------------|-----|
+| `robots.txt` | Yes | Yes |
+| `sitemap.xml` | Yes | Yes |
+| `llms.txt` and Markdown access | Yes | Yes |
+| MCP, API, and auth discovery | Yes | Yes |
+| Trust and provenance | Partial | Yes |
+| Reputation and third-party evidence | No | Yes |
+| Commerce readiness and purchase rules | Partial | Yes |
+| Memory and return paths | No | Yes |
+| Agent traffic, citations, and conversions | No | Yes |
+
+Layer model:
+
+1. Agent Readiness: technical compliance.
+2. Agent Signal Optimization: discovery, identity, trust, commerce, reputation, and memory.
+3. Agent Performance: actual agent traffic, citations, invocations, conversions, and returns.
+
 ### Applicability: Which Signals Matter When?
 
 Not every service needs every ASO signal on day one. The right signal stack depends on what an agent can actually do with the service.
