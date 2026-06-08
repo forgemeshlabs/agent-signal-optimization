@@ -233,7 +233,7 @@ Not every service needs every ASO signal on day one. The right signal stack depe
 
 | Signal | What It Is | How to Get It |
 |--------|------------|---------------|
-| Markdown negotiation | Returning clean Markdown when an agent sends `Accept: text/markdown` | Add server middleware, edge rules, or static `/index.md` fallbacks for important pages |
+| Markdown negotiation | Returning clean Markdown when an agent sends `Accept: text/markdown` | Add server middleware, edge rules, or static `/index.md` fallbacks for important pages. AgentSignalOptimization.com implements this for the homepage with a Cloudflare Pages Function. |
 | DNS-AID | DNS-level hints for AI-facing resources | Add supported DNS records when the standard and DNS host support them; treat as emerging |
 | Content Signals | Robots directives for search, grounding/input, and AI training preferences | Add `Content-Signal` rules to `robots.txt` once the content policy is clear |
 | Web Bot Auth | Signed bot requests and public-key discovery for identifying legitimate agents | Publish the well-known key directory and verify request signatures at the edge or app layer |
@@ -244,6 +244,8 @@ Not every service needs every ASO signal on day one. The right signal stack depe
 | Agent Skills | Skill documents that explain tasks an agent can perform with the service | Publish an index and skill docs when agent workflows need step-by-step operating instructions |
 | WebMCP | Browser-exposed tool discovery for web pages | Add when page-level tools can be safely exposed to compatible agent browsers |
 | x402, MPP, UCP, ACP | Agentic commerce protocols for price discovery, payment, purchase, and checkout | Implement when an agent can buy, book, unlock, or pay without a human checkout flow |
+
+AgentSignalOptimization.com currently publishes core static ASO signals, response `Link` headers, `Content-Signal` headers, Markdown fallback files, and homepage Markdown negotiation. DNS-AID and signed bot/auth/tool/payment protocols still require DNS or service-specific implementation.
 
 ### Key Performance Indicators (KPIs)
 

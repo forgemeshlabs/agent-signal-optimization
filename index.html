@@ -684,11 +684,12 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
         </div>
         <div class="gap-note">
           <strong>Phase-1 scanner gap:</strong>
-          the current ASO self-assessment scores the visible basics. A full
-          crawler should add automated checks for Link headers, DNS-AID,
-          Markdown negotiation, Content Signals, Web Bot Auth, API Catalog,
-          OAuth metadata, Auth.md, MCP Server Cards, A2A Agent Cards, Agent
-          Skills, WebMCP, and agentic commerce protocols.
+          the current ASO self-assessment scores the visible basics. The live
+          site now publishes Link headers, Content Signals, Markdown fallback
+          files, and a Pages Function for <code>Accept: text/markdown</code>.
+          A full crawler should still add automated checks for DNS-AID, Web Bot
+          Auth, API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A
+          Agent Cards, Agent Skills, WebMCP, and agentic commerce protocols.
         </div>
         <div class="applicability-panel">
           <div>
@@ -728,7 +729,7 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           <div role="row">
             <span>Markdown negotiation</span>
             <span>Return clean Markdown when an agent requests <code>Accept: text/markdown</code>.</span>
-            <span>Use server middleware, edge rules, or static <code>/index.md</code> fallbacks for key pages.</span>
+            <span>Implemented for the homepage with a Cloudflare Pages Function and <code>/index.md</code> fallback.</span>
           </div>
           <div role="row">
             <span>DNS-AID</span>

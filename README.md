@@ -108,8 +108,10 @@ This site currently publishes the core static ASO signals:
 - `.well-known` manifests
 - Markdown framework source
 - Markdown homepage fallback
+- Homepage Markdown negotiation for `Accept: text/markdown`
 - Score documentation
 - Response `Link` headers
+- `Content-Signal` headers
 - Public auth, payment, and status notes
 - JSON-LD structured data
 
@@ -128,7 +130,8 @@ For a basic ASO starter surface, publish:
 7. `/.well-known/status`
 8. `/.well-known/payments`
 9. Markdown source pages for the content agents should cite
-10. Clear auth, pricing, status, and ownership notes
+10. Markdown negotiation for high-value HTML pages
+11. Clear auth, pricing, status, and ownership notes
 
 Then keep every file consistent. Inconsistent names, claims, URLs, pricing, or auth rules reduce trust.
 
