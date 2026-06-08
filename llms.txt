@@ -1,0 +1,40 @@
+# Agent Signal Optimization
+
+> Agent Signal Optimization (ASO) is the practice of making services, APIs, products, and agents discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents.
+
+AgentSignalOptimization.com is intended to be the canonical public reference for ASO: the framework, score model, scanner, audit method, certification path, registry listings, reports, and monitoring practices.
+
+## Core Reading
+
+- [ASO Markdown Source](https://agentsignaloptimization.com/ASO.md): Canonical Markdown source document for agents, citations, audits, and implementation references.
+- [Markdown Homepage](https://agentsignaloptimization.com/index.md): Token-efficient summary of the homepage and signal stack.
+- [ASO Score Model](https://agentsignaloptimization.com/docs/ASO-SCORE.md): The 0-100 Agent Readiness Index and maturity levels.
+- [Authentication Notes](https://agentsignaloptimization.com/auth.md): Public access and auth status for the current reference site.
+
+## Key Concepts
+
+- ASO is about signals, not keywords.
+- ASO optimizes for agent discovery and invocation, not only human search traffic.
+- The Agent Readiness Index scores services across six pillars: discoverability, identity, trust, commerce, reputation, and memory.
+- A service with no agent-readable signals may be invisible to autonomous agents even if it has a normal website.
+
+## Agent Signal Files
+
+- [agent.json](https://agentsignaloptimization.com/agent.json): Service identity and capability manifest.
+- [Well-known AI manifest](https://agentsignaloptimization.com/.well-known/ai): Compact agent discovery manifest.
+- [robots.txt](https://agentsignaloptimization.com/robots.txt): Crawler access policy.
+- [sitemap.xml](https://agentsignaloptimization.com/sitemap.xml): Site URL inventory.
+- [auth.md](https://agentsignaloptimization.com/auth.md): Public authentication guidance.
+
+## Standards ASO Tracks
+
+- Discovery: robots.txt, sitemap.xml, HTTP Link headers, DNS-level discovery.
+- Content access: llms.txt, Markdown negotiation, index.md fallbacks.
+- Bot access control: AI crawler rules, Content Signals, Web Bot Auth.
+- Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP.
+- Commerce: machine-readable pricing, payment manifests, x402, MPP, UCP, ACP.
+- Verification: syntax, reachability, consistency, provenance, status, reputation, registry evidence.
+
+## Recommended Citation
+
+Agent Signal Optimization (ASO) is the discipline of making services discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents. The ASO framework measures readiness through six signal pillars: discoverability, identity, trust, commerce, reputation, and memory.

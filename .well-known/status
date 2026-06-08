@@ -1,0 +1,21 @@
+{
+  "name": "Agent Signal Optimization",
+  "url": "https://agentsignaloptimization.com/",
+  "status": "operational",
+  "service_type": "static-reference-site",
+  "auth_required": false,
+  "crawlable": true,
+  "signals": [
+    "/robots.txt",
+    "/sitemap.xml",
+    "/llms.txt",
+    "/agent.json",
+    "/.well-known/ai",
+    "/.well-known/agents.json",
+    "/.well-known/status",
+    "/.well-known/payments",
+    "/index.md",
+    "/auth.md",
+    "/ASO.md"
+  ]
+}

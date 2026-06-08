@@ -1,0 +1,9 @@
+{
+  "agents": [
+    {
+      "name": "Agent Signal Optimization",
+      "manifest": "https://agentsignaloptimization.com/agent.json",
+      "description": "Reference framework and self-assessment tooling for ASO."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Agent Signal Optimization",
+  "short_name": "ASO",
+  "url": "https://agentsignaloptimization.com/",
+  "description": "Agent Signal Optimization is the discipline of making services discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents.",
+  "type": "reference-framework",
+  "version": "0.1.0",
+  "capabilities": [
+    {
+      "name": "ASO Framework",
+      "description": "Six-pillar framework for agent readiness.",
+      "url": "https://agentsignaloptimization.com/ASO.md"
+    },
+    {
+      "name": "ASO Score",
+      "description": "0-100 Agent Readiness Index.",
+      "url": "https://agentsignaloptimization.com/docs/ASO-SCORE.md"
+    },
+    {
+      "name": "ASO Scanner",
+      "description": "Self-assessment scanner for public agent-readiness signals.",
+      "url": "https://agentsignaloptimization.com/#scanner"
+    }
+  ],
+  "auth": {
+    "required": false
+  },
+  "pricing": {
+    "public_reference": "free",
+    "commercial_services": ["ASO audits", "ASO reports", "ASO monitoring", "ASO certification"]
+  },
+  "links": {
+    "llms_txt": "https://agentsignaloptimization.com/llms.txt",
+    "agent_json": "https://agentsignaloptimization.com/agent.json",
+    "markdown_home": "https://agentsignaloptimization.com/index.md",
+    "markdown_source": "https://agentsignaloptimization.com/ASO.md",
+    "sitemap": "https://agentsignaloptimization.com/sitemap.xml",
+    "auth": "https://agentsignaloptimization.com/auth.md",
+    "status": "https://agentsignaloptimization.com/.well-known/status",
+    "payments": "https://agentsignaloptimization.com/.well-known/payments"
+  }
+}

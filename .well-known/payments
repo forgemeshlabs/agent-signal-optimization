@@ -1,0 +1,18 @@
+{
+  "name": "Agent Signal Optimization",
+  "url": "https://agentsignaloptimization.com/",
+  "public_reference": {
+    "price": "free",
+    "auth_required": false
+  },
+  "commercial_services": [
+    "ASO audits",
+    "ASO reports",
+    "ASO monitoring",
+    "ASO certification"
+  ],
+  "agent_payments": {
+    "supported": false,
+    "protocols": []
+  }
+}

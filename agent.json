@@ -1,0 +1,56 @@
+{
+  "name": "Agent Signal Optimization",
+  "short_name": "ASO",
+  "version": "0.1.0",
+  "url": "https://agentsignaloptimization.com/",
+  "description": "Reference framework and self-assessment tooling for Agent Signal Optimization: making services discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents.",
+  "publisher": {
+    "name": "ForgeMesh",
+    "url": "https://forgemesh.io/"
+  },
+  "capabilities": [
+    {
+      "id": "aso-framework",
+      "name": "ASO Framework",
+      "description": "Defines the six-pillar Agent Signal Optimization framework."
+    },
+    {
+      "id": "aso-score",
+      "name": "ASO Score",
+      "description": "Scores services with the 0-100 Agent Readiness Index."
+    },
+    {
+      "id": "aso-scanner",
+      "name": "ASO Scanner",
+      "description": "Self-assessment scanner for mapping public service signals to the Agent Readiness Index."
+    },
+    {
+      "id": "aso-audits",
+      "name": "ASO Audits",
+      "description": "Manual and automated readiness audits for services and APIs."
+    },
+    {
+      "id": "aso-registry",
+      "name": "ASO Registry Listings",
+      "description": "Registry listings for services that publish agent-readable signals."
+    }
+  ],
+  "signals": {
+    "llms_txt": "https://agentsignaloptimization.com/llms.txt",
+    "sitemap": "https://agentsignaloptimization.com/sitemap.xml",
+    "well_known_ai": "https://agentsignaloptimization.com/.well-known/ai",
+    "well_known_agents": "https://agentsignaloptimization.com/.well-known/agents.json",
+    "status": "https://agentsignaloptimization.com/.well-known/status",
+    "payments": "https://agentsignaloptimization.com/.well-known/payments",
+    "markdown_home": "https://agentsignaloptimization.com/index.md",
+    "markdown_source": "https://agentsignaloptimization.com/ASO.md",
+    "auth": "https://agentsignaloptimization.com/auth.md"
+  },
+  "auth": {
+    "required": false
+  },
+  "commerce": {
+    "paid_capabilities": false,
+    "services": ["ASO audits", "ASO reports", "ASO monitoring", "ASO certification"]
+  }
+}

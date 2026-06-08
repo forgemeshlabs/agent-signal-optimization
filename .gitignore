@@ -1,0 +1,16 @@
+handoffs/
+ABS.md
+ABS-broadcast-mechanics.md
+docs/PHASE-1.md
+docs/POSITIONING.md
+docs/*.zip
+
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+
+.DS_Store
