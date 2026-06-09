@@ -53,7 +53,7 @@ it, call it, pay for it, and remember it later?"
 
 ## 1. What Is Agent Signal Optimization?
 
-**Agent Signal Optimization (ASO)** is the practice of making services, APIs, products, and agents discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents.
+**Agent Signal Optimization (ASO)** is a framework that helps organizations navigate and implement emerging agent standards and technologies.
 
 It is the successor discipline to Search Engine Optimization (SEO). Where SEO optimized for human searchers clicking through blue links, ASO optimizes for autonomous agents that discover, evaluate, invoke, and pay for services without human intervention.
 
@@ -579,7 +579,7 @@ The following tools **do not exist yet** but are desperately needed:
 
 | Term | Definition |
 |------|-----------|
-| **ASO** | Agent Signal Optimization - making services discoverable, understandable, and invocable by AI agents |
+| **ASO** | Agent Signal Optimization - a framework that helps organizations navigate and implement emerging agent standards and technologies |
 | **Agent** | An autonomous AI system that perceives, plans, and acts to achieve goals without human intervention |
 | **llms.txt** | A Markdown file at `/llms.txt` providing a curated, AI-friendly summary of a site's content |
 | **MCP** | Model Context Protocol - Anthropic's open protocol for AI model tool connection |

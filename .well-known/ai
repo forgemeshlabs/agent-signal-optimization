@@ -2,7 +2,7 @@
   "name": "Agent Signal Optimization",
   "short_name": "ASO",
   "url": "https://agentsignaloptimization.com/",
-  "description": "Agent Signal Optimization is the discipline of making services discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents.",
+  "description": "ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.",
   "type": "reference-framework",
   "version": "0.1.0",
   "capabilities": [

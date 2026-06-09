@@ -1,8 +1,8 @@
 # Agent Signal Optimization (ASO)
 
-SEO was built for search engines and human clicks. Agent Signal Optimization (ASO) is built for AI shoppers, browser agents, research assistants, and buying bots that decide which links, products, services, and sources can be found, cited, recommended, invoked, paid for, and remembered in search-backed chat responses.
+SEO was built for search engines and human clicks.
 
-ASO is the practice of publishing verifiable public signals that autonomous agents can inspect before deciding whether to cite, trust, invoke, buy from, or remember a service.
+ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
 
 This repository is the public reference implementation for [AgentSignalOptimization.com](https://agentsignaloptimization.com/).
 
@@ -160,7 +160,7 @@ PY
 
 ## Recommended Citation
 
-Agent Signal Optimization (ASO) is the discipline of making services discoverable, understandable, trustable, invocable, payable-to, and memorable by autonomous AI agents. The ASO framework measures readiness through six signal pillars: discoverability, identity, trust, commerce, reputation, and memory.
+ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
 
 ## Publisher
 
