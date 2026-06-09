@@ -55,7 +55,7 @@ it, call it, pay for it, and remember it later?"
 
 **Agent Signal Optimization (ASO)** is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
-ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
+ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
 It is the successor discipline to Search Engine Optimization (SEO). Where SEO optimized for human searchers clicking through blue links, ASO optimizes for autonomous agents that discover, evaluate, invoke, and pay for services without human intervention.
 
@@ -185,7 +185,7 @@ ASO is not one file. It is the full public signal stack an agent can inspect bef
 
 | Layer | Why Agents Care | Files, Headers, or Endpoints |
 |-------|-----------------|------------------------------|
-| Discovery | Find the right paths without guessing or crawling blindly | `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-level discovery such as DNS-AID |
+| Discovery | Find the right paths without guessing or crawling blindly | `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-AID or DNS-level agent discovery signals where supported |
 | Content Access | Read high-signal content cheaply and reliably | `llms.txt`, Markdown negotiation with `Accept: text/markdown`, `/index.md` fallbacks |
 | Bot Access Control | Know what AI systems may crawl, search, train on, or use as input | AI crawler rules, `Content-Signal` directives, Web Bot Auth, `/.well-known/http-message-signatures-directory` |
 | Capabilities | Discover callable APIs, tools, auth flows, and task instructions | `/.well-known/api-catalog`, OAuth metadata, `auth.md`, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP |
@@ -236,18 +236,18 @@ Not every service needs every ASO signal on day one. The right signal stack depe
 | Signal | What It Is | How to Get It |
 |--------|------------|---------------|
 | Markdown negotiation | Returning clean Markdown when an agent sends `Accept: text/markdown` | Add server middleware, edge rules, or static `/index.md` fallbacks for important pages. AgentSignalOptimization.com implements this for the homepage with `_worker.js`. |
-| DNS-AID | DNS-level hints for AI-facing resources | Add supported DNS records when the standard and DNS host support them; treat as emerging |
+| DNS-AID or DNS-level discovery signals | DNS-level hints for AI-facing resources, where supported | Add supported DNS records when the convention and DNS host support them; treat as emerging |
 | Content Signals | Robots directives for search, grounding/input, and AI training preferences | Add `Content-Signal` rules to `robots.txt` once the content policy is clear |
 | Web Bot Auth | Signed bot requests and public-key discovery for identifying legitimate agents | Publish the well-known key directory and verify request signatures at the edge or app layer |
 | API Catalog | A well-known index of APIs, specs, docs, status pages, and auth requirements | Create `/.well-known/api-catalog` once the service has callable public APIs |
 | OAuth metadata | Machine-readable auth-server and protected-resource discovery | Expose OAuth well-known metadata when agents need delegated access on behalf of users |
 | MCP Server Card | Metadata that lets agents discover an MCP server, tools, transport, and auth | Publish the server card when the service has an MCP endpoint |
-| A2A Agent Card | Metadata for agent-to-agent capabilities and interaction | Publish when another agent can delegate tasks to this service |
+| A2A Agent Card | Metadata for agent-to-agent capabilities and interaction | Publish at the current recommended well-known path when another agent can delegate tasks to this service |
 | Agent Skills | Skill documents that explain tasks an agent can perform with the service | Publish an index and skill docs when agent workflows need step-by-step operating instructions |
 | WebMCP | Browser-exposed tool discovery for web pages | Add when page-level tools can be safely exposed to compatible agent browsers |
 | x402, MPP, UCP, ACP | Agentic commerce protocols for price discovery, payment, purchase, and checkout | Implement when an agent can buy, book, unlock, or pay without a human checkout flow |
 
-AgentSignalOptimization.com currently publishes core static ASO signals, response `Link` headers, `Content-Signal` headers, Markdown fallback files, and homepage Markdown negotiation. DNS-AID and signed bot/auth/tool/payment protocols still require DNS or service-specific implementation.
+AgentSignalOptimization.com currently publishes core static ASO signals, response `Link` headers, `Content-Signal` headers, Markdown fallback files, and homepage Markdown negotiation. DNS-AID or DNS-level agent discovery signals and signed bot/auth/tool/payment protocols still require DNS or service-specific implementation.
 
 ### Key Performance Indicators (KPIs)
 
@@ -273,7 +273,7 @@ If agents can't find you, nothing else matters. Discoverability is the foundatio
 | `sitemap.xml` | **Required** | Low | Established |
 | `llms.txt` | **High** | Low | Emerging (844K+ sites) |
 | `/.well-known/ai` (IETF draft) | **High** | Low | Standardizing |
-| `/.well-known/agents.json` | Medium | Low | Early draft |
+| A2A Agent Card paths and related agent discovery manifests | Medium | Low | Emerging |
 | MCP directory submission | **High** | Medium | Emerging (26K+ servers) |
 | GitHub discoverability | Medium | Medium | Emerging |
 
@@ -281,7 +281,7 @@ If agents can't find you, nothing else matters. Discoverability is the foundatio
 
 - **`robots.txt`**: Must include explicit rules for AI crawlers - both training crawlers (GPTBot, ClaudeBot, Google-Extended) and retrieval crawlers (ChatGPT-User, PerplexityBot, OAI-SearchBot). Differentiate between "allow indexing" and "allow training." 2.5M+ websites already use Cloudflare's managed AI crawler rules.
 - **`sitemap.xml`**: The classic content map. Still essential. List all indexable URLs with `lastmod`, `priority`, and `changefreq`.
-- **`llms.txt`**: The emerging standard. A Markdown file at `/llms.txt` with a curated reading list for LLMs. H1 title, blockquote summary, H2 sections with links. Takes <10 minutes to implement. 844K+ sites already have it.
+- **`llms.txt`**: An emerging convention and proposal. A Markdown file at `/llms.txt` with a curated reading list for LLMs. H1 title, blockquote summary, H2 sections with links. Takes <10 minutes to implement. 844K+ sites already have it.
 - **`/.well-known/ai`**: The IETF Internet-Draft (March 2026). A JSON manifest describing service identity, capabilities, auth, and operational hints. Token-optimized: 200-800 tokens for 5 capabilities vs. 5,000-20,000 for equivalent OpenAPI. Implementation time: <30 minutes.
 - **MCP Directories**: Submit your MCP server to the major directories (MCPWorld, MCP.so, Glama, Smithery, PulseMCP, Anthropic's official collection). 26,000+ servers are listed - but that's a fraction of the APIs that exist.
 - **GitHub**: For code-based tools, ensure your repo has a clear README, relevant topics/tags, and optionally `/.well-known/mcp.json`, `llms.txt`, or `skill.md` files.

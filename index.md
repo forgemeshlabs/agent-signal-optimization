@@ -4,7 +4,7 @@ SEO was built for search engines and human clicks.
 
 ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
-ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
+ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
 ## Core References
 
@@ -20,7 +20,7 @@ ASO is built on emerging standards and technologies including A2A, MCP, x402, Ag
 
 ASO tracks the public artifacts agents increasingly inspect:
 
-- Discovery: `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-level discovery
+- Discovery: `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-AID or DNS-level agent discovery signals where supported
 - Content access: `llms.txt`, Markdown content, `/index.md` fallbacks
 - Bot access control: AI crawler rules, Content Signals, Web Bot Auth
 - Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP

@@ -132,9 +132,9 @@
 
       <section class="open-framework-note" aria-label="ASO open framework note">
         <p>
-          ASO is an open framework built on emerging standards and technologies
-          including A2A, MCP, x402, Agent Readiness, llms.txt, and agent
-          discovery initiatives.
+          ASO is an open framework built on emerging agent-readiness standards,
+          discovery conventions, and commerce protocols including A2A, MCP,
+          x402, llms.txt, Agent Readiness, and agent discovery initiatives.
         </p>
       </section>
 
@@ -387,7 +387,7 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           <article class="artifact">
             <span>01</span>
             <h3>Discovery files</h3>
-            <p>robots.txt, sitemap.xml, llms.txt, /.well-known/ai, and /.well-known/agents.json.</p>
+            <p>robots.txt, sitemap.xml, llms.txt, A2A Agent Card paths, and other agent discovery manifests.</p>
             <code>GET /llms.txt</code>
           </article>
           <article class="artifact">
@@ -640,7 +640,7 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
               <li><code>robots.txt</code> with AI crawler rules</li>
               <li><code>sitemap.xml</code> with canonical URLs</li>
               <li>HTTP <code>Link</code> headers for machine resources</li>
-              <li>DNS-AID or other DNS-level discovery signals</li>
+              <li>DNS-AID or DNS-level agent discovery signals, where supported</li>
             </ul>
           </article>
           <article>
@@ -704,8 +704,9 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           the current ASO self-assessment scores the visible basics. The live
           site now publishes Link headers, Content Signals, Markdown fallback
           files, and a Pages Function for <code>Accept: text/markdown</code>.
-          A full crawler should still add automated checks for DNS-AID, Web Bot
-          Auth, API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A
+          A full crawler should still add automated checks for DNS-AID or
+          DNS-level agent discovery signals where supported, Web Bot Auth,
+          API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A
           Agent Cards, Agent Skills, WebMCP, and agentic commerce protocols.
         </div>
         <div class="applicability-panel">
@@ -749,9 +750,9 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
             <span>Implemented for the homepage with a Cloudflare Pages Function and <code>/index.md</code> fallback.</span>
           </div>
           <div role="row">
-            <span>DNS-AID</span>
-            <span>DNS-level hints that help agents discover AI-facing resources before fetching pages.</span>
-            <span>Add supported DNS records when the standard and your DNS host support them; treat as emerging.</span>
+            <span>DNS-level discovery</span>
+            <span>DNS-AID or DNS-level agent discovery signals that help agents discover AI-facing resources before fetching pages, where supported.</span>
+            <span>Add supported DNS records when the convention and your DNS host support them; treat as emerging.</span>
           </div>
           <div role="row">
             <span>Content Signals</span>

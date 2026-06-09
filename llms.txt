@@ -6,7 +6,7 @@
 
 AgentSignalOptimization.com is intended to be a public reference for ASO: the open framework, score model, scanner, audit method, certification path, registry listings, reports, and monitoring practices.
 
-ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
+ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
 ## Core Reading
 
@@ -33,7 +33,7 @@ ASO is built on emerging standards and technologies including A2A, MCP, x402, Ag
 
 ## Standards ASO Tracks
 
-- Discovery: robots.txt, sitemap.xml, HTTP Link headers, DNS-level discovery.
+- Discovery: robots.txt, sitemap.xml, HTTP Link headers, DNS-AID or DNS-level agent discovery signals where supported.
 - Content access: llms.txt, Markdown negotiation, index.md fallbacks.
 - Bot access control: AI crawler rules, Content Signals, Web Bot Auth.
 - Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP.

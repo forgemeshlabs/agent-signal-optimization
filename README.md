@@ -4,7 +4,7 @@ SEO was built for search engines and human clicks.
 
 ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
-ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
+ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
 This repository is the public reference implementation for [AgentSignalOptimization.com](https://agentsignaloptimization.com/).
 
@@ -45,7 +45,7 @@ If those signals are missing, an agent may skip the site, guess from incomplete 
 | [`sitemap.xml`](sitemap.xml) | URL inventory |
 | [`_headers`](_headers) | Cloudflare Pages content types and response `Link` headers |
 | [`.well-known/ai`](.well-known/ai) | Compact agent discovery manifest |
-| [`.well-known/agents.json`](.well-known/agents.json) | Agent manifest index |
+| [`.well-known/agents.json`](.well-known/agents.json) | Local agent manifest index |
 | [`.well-known/status`](.well-known/status) | Public status manifest |
 | [`.well-known/payments`](.well-known/payments) | Pricing and payment manifest |
 
@@ -55,7 +55,7 @@ ASO tracks the public standards and artifacts agents increasingly inspect:
 
 | Layer | Why it matters | Examples |
 | --- | --- | --- |
-| Discovery | Helps agents find the right paths without guessing | `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-level discovery |
+| Discovery | Helps agents find the right paths without guessing | `robots.txt`, `sitemap.xml`, HTTP `Link` headers, DNS-AID or DNS-level agent discovery signals where supported |
 | Content access | Gives agents clean, token-efficient text | `llms.txt`, Markdown negotiation, `/index.md` fallbacks |
 | Bot access control | Separates search, grounding, training, and signed bot access | AI crawler rules, Content Signals, Web Bot Auth |
 | Capabilities | Shows agents what can be invoked | API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP |
@@ -127,8 +127,8 @@ For a basic ASO starter surface, publish:
 2. `sitemap.xml`
 3. `llms.txt`
 4. `agent.json`
-5. `/.well-known/ai`
-6. `/.well-known/agents.json`
+5. `/.well-known/ai`, A2A Agent Card paths, and other agent discovery manifests as applicable
+6. Local manifest indexes when useful
 7. `/.well-known/status`
 8. `/.well-known/payments`
 9. Markdown source pages for the content agents should cite
