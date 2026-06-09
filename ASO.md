@@ -233,7 +233,7 @@ Not every service needs every ASO signal on day one. The right signal stack depe
 
 | Signal | What It Is | How to Get It |
 |--------|------------|---------------|
-| Markdown negotiation | Returning clean Markdown when an agent sends `Accept: text/markdown` | Add server middleware, edge rules, or static `/index.md` fallbacks for important pages. AgentSignalOptimization.com implements this for the homepage with a Cloudflare Pages Function. |
+| Markdown negotiation | Returning clean Markdown when an agent sends `Accept: text/markdown` | Add server middleware, edge rules, or static `/index.md` fallbacks for important pages. AgentSignalOptimization.com implements this for the homepage with `_worker.js`. |
 | DNS-AID | DNS-level hints for AI-facing resources | Add supported DNS records when the standard and DNS host support them; treat as emerging |
 | Content Signals | Robots directives for search, grounding/input, and AI training preferences | Add `Content-Signal` rules to `robots.txt` once the content policy is clear |
 | Web Bot Auth | Signed bot requests and public-key discovery for identifying legitimate agents | Publish the well-known key directory and verify request signatures at the edge or app layer |
