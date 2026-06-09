@@ -53,7 +53,9 @@ it, call it, pay for it, and remember it later?"
 
 ## 1. What Is Agent Signal Optimization?
 
-**Agent Signal Optimization (ASO)** is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+**Agent Signal Optimization (ASO)** is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
+
+ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
 It is the successor discipline to Search Engine Optimization (SEO). Where SEO optimized for human searchers clicking through blue links, ASO optimizes for autonomous agents that discover, evaluate, invoke, and pay for services without human intervention.
 
@@ -174,7 +176,7 @@ The ARI is scored from **0 to 100**, mapped to six maturity levels:
 | **Identity** (Pillar 2) | Schema.org markup, OpenAPI spec, agent.json, semantic documentation | 20 |
 | **Trust** (Pillar 3) | SSL/TLS, domain authority, verifiable credentials, auth standards, governance | 15 |
 | **Commerce** (Pillar 4) | x402 endpoints, payment manifests, pricing signals, facilitator registration | 15 |
-| **Reputation** (Pillar 5) | Citation signals, usage metrics, success rates, directory reviews, endorsements | 15 |
+| **Reputation** (Pillar 5, emerging) | Citation signals, usage metrics, success rates, directory reviews, endorsements | 15 |
 | **Memory** (Pillar 6) | llms.txt quality, persistent identity, consistent signals, brand recall | 15 |
 
 ### Agent Signal Stack
@@ -383,7 +385,7 @@ This is the frontier. Without a payment protocol, agents are limited to free API
 
 ### Pillar 5: Reputation - Will Agents Recommend Me?
 
-Agents, like humans, rely on social proof. Reputation signals determine whether an agent recommends your service over a competitor's.
+Reputation is the most visibly evolving ASO pillar. Agents, like humans, rely on social proof, but the artifacts for agent-facing reputation are still maturing. Treat reputation as an evolving evidence layer: uptime, completion rates, citations, directories, reviews, and third-party verification.
 
 | Signal | Priority | Complexity | Status |
 |--------|----------|------------|--------|
@@ -579,7 +581,7 @@ The following tools **do not exist yet** but are desperately needed:
 
 | Term | Definition |
 |------|-----------|
-| **ASO** | Agent Signal Optimization - a framework that helps organizations navigate and implement emerging agent standards and technologies |
+| **ASO** | Agent Signal Optimization - an open framework that helps organizations navigate and implement emerging agent standards and technologies |
 | **Agent** | An autonomous AI system that perceives, plans, and acts to achieve goals without human intervention |
 | **llms.txt** | A Markdown file at `/llms.txt` providing a curated, AI-friendly summary of a site's content |
 | **MCP** | Model Context Protocol - Anthropic's open protocol for AI model tool connection |
@@ -613,4 +615,4 @@ The following tools **do not exist yet** but are desperately needed:
 
 ---
 
-*Agent Signal Optimization (ASO) is an open framework. This document is released as a living standard. Contribute, extend, and build upon it.*
+*Agent Signal Optimization (ASO) is an open framework for organizing emerging agent standards into practical implementation guidance. Contribute, extend, and build upon it.*

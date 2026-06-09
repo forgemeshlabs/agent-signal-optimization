@@ -23,7 +23,7 @@ The ASO Score, formally the Agent Readiness Index, is a 0-100 score for measurin
 | Identity | 20 | schema.org, JSON-LD, OpenAPI, agent.json, semantic documentation |
 | Trust | 15 | HTTPS, auth clarity, governance, provenance, operational status |
 | Commerce | 15 | pricing signals, payment manifest, x402, agent-safe purchase path |
-| Reputation | 15 | uptime, latency, success rates, citations, endorsements, directory presence |
+| Reputation (emerging) | 15 | uptime, latency, success rates, citations, endorsements, directory presence |
 | Memory | 15 | persistent identity, stable URLs, consistent signals, versioning, return paths |
 
 ## Scanner Interpretation

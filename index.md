@@ -2,7 +2,9 @@
 
 SEO was built for search engines and human clicks.
 
-ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
+
+ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
 ## Core References
 

@@ -2,13 +2,13 @@
   "name": "Agent Signal Optimization",
   "short_name": "ASO",
   "url": "https://agentsignaloptimization.com/",
-  "description": "ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.",
+  "description": "ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.",
   "type": "reference-framework",
   "version": "0.1.0",
   "capabilities": [
     {
       "name": "ASO Framework",
-      "description": "Six-pillar framework for agent readiness.",
+      "description": "Six-pillar open framework for agent readiness.",
       "url": "https://agentsignaloptimization.com/ASO.md"
     },
     {

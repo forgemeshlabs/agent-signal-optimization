@@ -2,9 +2,11 @@
 
 > SEO was built for search engines and human clicks.
 >
-> ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+> ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
-AgentSignalOptimization.com is intended to be the canonical public reference for ASO: the framework, score model, scanner, audit method, certification path, registry listings, reports, and monitoring practices.
+AgentSignalOptimization.com is intended to be a public reference for ASO: the open framework, score model, scanner, audit method, certification path, registry listings, reports, and monitoring practices.
+
+ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
 ## Core Reading
 
@@ -18,6 +20,7 @@ AgentSignalOptimization.com is intended to be the canonical public reference for
 - ASO is about signals, not keywords.
 - ASO optimizes for agent discovery and invocation, not only human search traffic.
 - The Agent Readiness Index scores services across six pillars: discoverability, identity, trust, commerce, reputation, and memory.
+- Reputation is an emerging ASO pillar because agent-facing reputation artifacts are still maturing.
 - A service with no agent-readable signals may be invisible to autonomous agents even if it has a normal website.
 
 ## Agent Signal Files
@@ -39,4 +42,4 @@ AgentSignalOptimization.com is intended to be the canonical public reference for
 
 ## Recommended Citation
 
-ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.

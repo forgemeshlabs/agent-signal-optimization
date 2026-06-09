@@ -2,7 +2,9 @@
 
 SEO was built for search engines and human clicks.
 
-ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
+
+ASO is built on emerging standards and technologies including A2A, MCP, x402, Agent Readiness, llms.txt, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
 This repository is the public reference implementation for [AgentSignalOptimization.com](https://agentsignaloptimization.com/).
 
@@ -21,7 +23,7 @@ If those signals are missing, an agent may skip the site, guess from incomplete 
 
 ## What Is Included
 
-- ASO framework and definition
+- ASO open framework and definition
 - Agent Readiness Index score model
 - Free ASO self-assessment scanner
 - Agent-readable discovery files
@@ -73,7 +75,7 @@ ASO asks whether agents will choose, trust, cite, invoke, buy from, and remember
 | `llms.txt` and Markdown access | Yes | Yes |
 | MCP, API, and auth discovery | Yes | Yes |
 | Trust and provenance | Partial | Yes |
-| Reputation and third-party evidence | No | Yes |
+| Reputation and third-party evidence | No | Yes, emerging |
 | Commerce readiness and purchase rules | Partial | Yes |
 | Memory and return paths | No | Yes |
 | Agent traffic, citations, and conversions | No | Yes |
@@ -160,7 +162,7 @@ PY
 
 ## Recommended Citation
 
-ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.
+ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
 ## Publisher
 

@@ -3,7 +3,7 @@
   "short_name": "ASO",
   "version": "0.1.0",
   "url": "https://agentsignaloptimization.com/",
-  "description": "ASO is a framework that helps organizations navigate and implement emerging agent standards and technologies.",
+  "description": "ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.",
   "publisher": {
     "name": "ForgeMesh",
     "url": "https://forgemesh.io/"
@@ -12,7 +12,7 @@
     {
       "id": "aso-framework",
       "name": "ASO Framework",
-      "description": "Defines the six-pillar Agent Signal Optimization framework."
+      "description": "Defines the six-pillar Agent Signal Optimization open framework."
     },
     {
       "id": "aso-score",
