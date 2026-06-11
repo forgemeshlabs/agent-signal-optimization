@@ -1732,21 +1732,21 @@ input[type="checkbox"] {
   background: var(--panel);
 }
 
-.score-table {
+.lb-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
 }
 
-.score-table th,
-.score-table td {
+.lb-table th,
+.lb-table td {
   padding: 12px 14px;
   text-align: left;
   border-bottom: 1px solid var(--line);
   white-space: nowrap;
 }
 
-.score-table thead th {
+.lb-table thead th {
   color: var(--subtle);
   font-family: var(--mono);
   font-size: 0.68rem;
@@ -1755,23 +1755,23 @@ input[type="checkbox"] {
   letter-spacing: 0.08em;
 }
 
-.score-table tbody tr:last-child td {
+.lb-table tbody tr:last-child td {
   border-bottom: 0;
 }
 
-.score-table td.score {
+.lb-table td.score {
   color: var(--accent-strong);
   font-family: var(--mono);
   font-size: 1.05rem;
   font-weight: 760;
 }
 
-.score-table td:nth-child(n + 5) {
+.lb-table td:nth-child(n + 5) {
   color: var(--muted);
   font-family: var(--mono);
 }
 
-.lvl {
+.lb-table .lvl {
   display: inline-block;
   padding: 3px 10px;
   border-radius: 999px;
@@ -1780,17 +1780,17 @@ input[type="checkbox"] {
   font-weight: 680;
 }
 
-.lvl-3 {
+.lb-table .lvl-3 {
   color: #0e1513;
   background: var(--accent);
 }
 
-.lvl-2 {
+.lb-table .lvl-2 {
   color: #1a1206;
   background: var(--warn);
 }
 
-.lvl-1 {
+.lb-table .lvl-1 {
   color: var(--muted);
   background: rgba(244, 240, 232, 0.1);
   border: 1px solid var(--line);
@@ -1848,12 +1848,12 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 760px) {
-  .score-table {
+  .lb-table {
     font-size: 0.8rem;
   }
 
-  .score-table th,
-  .score-table td {
+  .lb-table th,
+  .lb-table td {
     padding: 10px 10px;
   }
 }
