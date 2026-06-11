@@ -190,7 +190,7 @@ ASO is not one file. It is the full public signal stack an agent can inspect bef
 | Bot Access Control | Know what AI systems may crawl, search, train on, or use as input | AI crawler rules, `Content-Signal` directives, Web Bot Auth, `/.well-known/http-message-signatures-directory` |
 | Capabilities | Discover callable APIs, tools, auth flows, and task instructions | `/.well-known/api-catalog`, OAuth metadata, `auth.md`, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP |
 | Commerce | Understand price, payment terms, purchase rules, and agent-safe checkout | Machine-readable pricing, `/.well-known/payments`, x402, MPP, UCP, ACP |
-| Verification | Check whether the claim is real, current, consistent, and auditable | Syntax validation, reachable URLs, status pages, provenance, reputation, registry records, certification evidence |
+| Verification | Check whether the claim is real, current, consistent, and auditable | Syntax validation, reachable URLs, status pages, provenance, reputation, public reports, reproducible scan evidence |
 
 The phase-1 ASO scanner is a self-assessment of visible basics. A full ASO crawler should automate this stack, map failures to the Agent Readiness Index, and generate a remediation plan.
 

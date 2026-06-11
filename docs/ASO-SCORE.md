@@ -30,21 +30,38 @@ The ASO Score, formally the Agent Readiness Index, is a 0-100 score for measurin
 
 The current scanner is a self-assessment calculator. It maps published signals to the Agent Readiness Index. Scores are directional until verified by an automated crawler or manual ASO audit.
 
-## Certification Thresholds
+## Score Badge Beta
 
-Certification begins at ASO-3 or higher:
+The current public display model is a score badge, not certification:
 
-- **ASO Certified Invocable:** ASO-3, score 50-69, verified OpenAPI or equivalent invocation path.
-- **ASO Certified Trustable:** ASO-4, score 70-89, verified trust, reputation, and operational signals.
-- **ASO Certified Autonomous-Commerce-Ready:** ASO-5, score 90-100, verified payment and returnability signals.
+- **ASO Score:** 0-100.
+- **ASO Level:** ASO-0 through ASO-5.
+- **Scanner:** ASO Audit v0.1 or later, including scanner version in the report.
+- **Report:** Public report URL or `/.well-known/aso-report.json` when available.
+
+Example display:
+
+```html
+<a href="https://agentsignaloptimization.com/examples">
+  <img src="https://agentsignaloptimization.com/badge/aso-3.svg" alt="ASO Score: 65/100, ASO-3 Invocable">
+</a>
+```
+
+## Verification Roadmap
+
+ASO uses a staged authority model:
+
+- **Self-scored:** anyone can run the scanner and publish an ASO Score.
+- **Verified:** scan passes, the report is public, and the result is reproducible.
+- **Human-reviewed:** future paid review tier with re-scan, claim verification, and renewal.
 
 ## Evidence Requirements
 
-Certification requires public evidence:
+Verified reports and future human review should require public evidence:
 
 - Accessible signal files.
 - Valid syntax for machine-readable manifests.
 - Consistent service identity across files.
 - Verifiable auth and pricing documentation.
 - Public or submitted uptime and success metrics.
-- Registry entry with timestamped verification.
+- Timestamped report with scanner version, methodology, score, level, and checked artifacts.

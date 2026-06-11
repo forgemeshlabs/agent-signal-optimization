@@ -619,7 +619,7 @@ pre {
 .spec,
 .framework,
 .roadmap,
-.certification-detail {
+.badge-roadmap {
   background: rgba(255, 255, 255, 0.015);
 }
 
@@ -814,6 +814,53 @@ pre {
   background: var(--panel-2);
 }
 
+.score-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.score-badge-card {
+  padding: 20px;
+  background:
+    linear-gradient(135deg, rgba(100, 185, 168, 0.18), rgba(244, 240, 232, 0.05)),
+    var(--panel);
+  border: 1px solid rgba(100, 185, 168, 0.36);
+  border-radius: 22px;
+}
+
+.score-badge-card span,
+.score-badge-card em {
+  display: block;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-style: normal;
+  font-weight: 760;
+}
+
+.score-badge-card strong {
+  display: block;
+  margin: 6px 0 2px;
+  font-family: var(--mono);
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 0.95;
+}
+
+.score-badge-card p {
+  margin: 16px 0 0;
+  color: #d5dcdb;
+}
+
+.score-badge-card code {
+  overflow-wrap: anywhere;
+}
+
+.score-badge-card a {
+  display: inline-flex;
+  margin-top: 14px;
+  color: var(--accent-strong);
+  font-weight: 760;
+}
+
 .score-table {
   overflow: hidden;
   background: rgba(244, 240, 232, 0.04);
@@ -842,6 +889,10 @@ pre {
 
 .score-table em {
   text-align: right;
+}
+
+.score-table strong {
+  overflow-wrap: anywhere;
 }
 
 .text-link {

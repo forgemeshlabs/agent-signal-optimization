@@ -31,8 +31,8 @@
     },
     {
       "id": "aso-registry",
-      "name": "ASO Registry Listings",
-      "description": "Registry listings for services that publish agent-readable signals."
+      "name": "ASO Verified Reports",
+      "description": "Public score reports for services that publish agent-readable signals."
     }
   ],
   "scanner": {
@@ -59,6 +59,6 @@
   },
   "commerce": {
     "paid_capabilities": false,
-    "services": ["ASO audits", "ASO reports", "ASO monitoring", "ASO certification"]
+    "services": ["ASO audits", "ASO reports", "ASO monitoring", "ASO Score Badge Beta"]
   }
 }

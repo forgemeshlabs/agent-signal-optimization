@@ -4,7 +4,7 @@
 >
 > ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
 
-AgentSignalOptimization.com is intended to be a public reference for ASO: the open framework, score model, scanner, audit method, certification path, registry listings, reports, and monitoring practices.
+AgentSignalOptimization.com is intended to be a public reference for ASO: the open framework, score model, scanner, audit method, score-badge roadmap, verified reports, and monitoring practices.
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 

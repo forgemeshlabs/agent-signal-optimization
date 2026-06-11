@@ -20,7 +20,7 @@ Scoring: Agent Readiness Index, 0-100 (see /docs/ASO-SCORE.md)
 | 9 | openai.com | 19 | ASO-1 Discoverable | 8 | 0 | 8 | 0 | 0 | 2.5 |
 | 10 | amazon.com | 15 | ASO-1 Discoverable | 4 | 2.5 | 8 | 0 | 0 | 0 |
 
-Average score: 33.1. Median: 31. Certification range starts at 50; one site out of ten reached it.
+Average score: 33.1. Median: 31. ASO-3 Invocable starts at 50; one site out of ten reached that level.
 
 ## Findings
 
