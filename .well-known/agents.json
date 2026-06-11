@@ -3,6 +3,8 @@
     {
       "name": "Agent Signal Optimization",
       "manifest": "https://agentsignaloptimization.com/agent.json",
+      "agentCard": "https://agentsignaloptimization.com/.well-known/agent-card.json",
+      "mcpServerCard": "https://agentsignaloptimization.com/.well-known/mcp/server-card.json",
       "description": "Reference framework and self-assessment tooling for ASO."
     }
   ]

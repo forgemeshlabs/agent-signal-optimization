@@ -1,6 +1,8 @@
 const MARKDOWN_ROUTES = new Map([
   ["/", "/index.md"],
-  ["/index.html", "/index.md"]
+  ["/index.html", "/index.md"],
+  ["/examples", "/examples.md"],
+  ["/examples.html", "/examples.md"]
 ]);
 
 function estimateTokens(markdown) {

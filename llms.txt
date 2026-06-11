@@ -13,6 +13,7 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 - [ASO Markdown Source](https://agentsignaloptimization.com/ASO.md): Canonical Markdown source document for agents, citations, audits, and implementation references.
 - [Markdown Homepage](https://agentsignaloptimization.com/index.md): Token-efficient summary of the homepage and signal stack.
 - [ASO Score Model](https://agentsignaloptimization.com/docs/ASO-SCORE.md): The 0-100 Agent Readiness Index and maturity levels.
+- [Early ASO Examples](https://agentsignaloptimization.com/examples.md): Published ASO scans of 10 well-known sites (2026-06-11) with scores, findings, and method.
 - [Authentication Notes](https://agentsignaloptimization.com/auth.md): Public access and auth status for the current reference site.
 
 ## Key Concepts
@@ -27,6 +28,8 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 
 - [agent.json](https://agentsignaloptimization.com/agent.json): Service identity and capability manifest.
 - [Well-known AI manifest](https://agentsignaloptimization.com/.well-known/ai): Compact agent discovery manifest.
+- [A2A Agent Card](https://agentsignaloptimization.com/.well-known/agent-card.json): Agent2Agent protocol card for the ASO Scanner agent.
+- [MCP Server Card](https://agentsignaloptimization.com/.well-known/mcp/server-card.json): MCP server card for the installable ASO scanner.
 - [robots.txt](https://agentsignaloptimization.com/robots.txt): Crawler access policy.
 - [sitemap.xml](https://agentsignaloptimization.com/sitemap.xml): Site URL inventory.
 - [auth.md](https://agentsignaloptimization.com/auth.md): Public authentication guidance.
@@ -39,6 +42,10 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 - Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP.
 - Commerce: machine-readable pricing, payment manifests, x402, MPP, UCP, ACP.
 - Verification: syntax, reachability, consistency, provenance, status, reputation, registry evidence.
+
+## ASO Scanner (MCP)
+
+The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp
 
 ## Recommended Citation
 

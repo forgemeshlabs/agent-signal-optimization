@@ -70,6 +70,7 @@
         <a href="#score">Score</a>
         <a href="#standards">Standards</a>
         <a href="#scanner">Scanner</a>
+        <a href="/examples.html">Examples</a>
         <a href="#roadmap">Roadmap</a>
       </nav>
     </header>
@@ -808,6 +809,35 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           </p>
         </div>
 
+        <div class="scanner-install">
+          <div class="terminal-card" aria-label="ASO scanner install commands">
+            <div class="terminal-top">
+              <span>@forgemeshlabs/aso-audit-mcp</span>
+              <strong>npm | beta</strong>
+            </div>
+            <pre><code># Run the automated ASO scanner from any MCP client
+
+# Claude Code
+claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
+
+# Claude Desktop / Cursor / Windsurf
+{ "mcpServers": { "aso": {
+    "command": "npx",
+    "args": ["-y", "@forgemeshlabs/aso-audit-mcp"] } } }
+
+# Then ask your agent
+"Scan example.com for agent readiness"</code></pre>
+          </div>
+          <p class="install-note">
+            The checklist below is the manual self-assessment. The scanner runs
+            the same framework automatically: 33 public-signal checks across
+            the six pillars, an ASO Score, and a prioritized fix plan.
+            <a href="https://github.com/forgemeshlabs/aso-audit-mcp" rel="noopener">Source on GitHub</a>
+            |
+            <a href="https://www.npmjs.com/package/@forgemeshlabs/aso-audit-mcp" rel="noopener">npm package</a>
+          </p>
+        </div>
+
         <div class="scanner">
           <div class="scanner-score" aria-live="polite">
             <span id="scoreValue">0</span>
@@ -858,6 +888,23 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
             </fieldset>
           </form>
         </div>
+      </section>
+
+      <section class="band examples-teaser" id="examples">
+        <div class="section-heading align-left">
+          <p class="section-label">Early ASO Examples</p>
+          <h2>We scanned 10 of the most recognizable sites on the internet. The best score was 66 out of 100.</h2>
+          <p>
+            Cloudflare leads at ASO-3 Invocable. OpenAI scored 19. Amazon
+            scored 15. Every site lets AI crawlers in; almost none of them tell
+            agents what they sell, what it costs, or how to act. See the full
+            leaderboard, findings, and method.
+          </p>
+        </div>
+        <a class="button primary" href="/examples.html">
+          See the early examples
+          <span aria-hidden="true">data</span>
+        </a>
       </section>
 
       <section class="band roadmap" id="roadmap">
@@ -980,6 +1027,8 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
       <span>AgentSignalOptimization.com</span>
       <a href="/docs/ASO-SCORE.md">Score Model</a>
       <a href="/agent.json">Agent Manifest</a>
+      <a href="/.well-known/agent-card.json">A2A Card</a>
+      <a href="/examples.html">Examples</a>
       <a href="/.well-known/ai">Well-Known AI</a>
       <a class="publisher-link" href="https://forgemesh.io/">2026 Published by ForgeMesh</a>
     </footer>

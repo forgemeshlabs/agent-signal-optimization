@@ -13,6 +13,9 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 - [LLM Reading Guide](https://agentsignaloptimization.com/llms.txt)
 - [Agent Manifest](https://agentsignaloptimization.com/agent.json)
 - [Well-Known AI Manifest](https://agentsignaloptimization.com/.well-known/ai)
+- [A2A Agent Card](https://agentsignaloptimization.com/.well-known/agent-card.json)
+- [MCP Server Card](https://agentsignaloptimization.com/.well-known/mcp/server-card.json)
+- [Early ASO Examples](https://agentsignaloptimization.com/examples.md)
 - [Status Manifest](https://agentsignaloptimization.com/.well-known/status)
 - [Payments Manifest](https://agentsignaloptimization.com/.well-known/payments)
 
@@ -29,6 +32,6 @@ ASO tracks the public artifacts agents increasingly inspect:
 
 ## Current Site Status
 
-This site currently publishes the core static ASO signals: `robots.txt`, `sitemap.xml`, `llms.txt`, `agent.json`, `.well-known` manifests, Markdown framework source, score documentation, response `Link` headers, and public auth/payment/status notes.
+This site currently publishes the core static ASO signals: `robots.txt`, `sitemap.xml`, `llms.txt`, `agent.json`, `.well-known` manifests (including an A2A agent card and an MCP server card), Markdown framework source, score documentation, response `Link` headers, and public auth/payment/status notes.
 
-It does not currently expose a public API, OAuth flow, MCP server, A2A endpoint, x402 payment endpoint, or automated crawler-backed scanner.
+The automated ASO scanner ships as an installable MCP server: `npx -y @forgemeshlabs/aso-audit-mcp`. It runs locally in your MCP client. This site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.

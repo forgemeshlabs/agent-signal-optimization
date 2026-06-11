@@ -26,9 +26,26 @@ If those signals are missing, an agent may skip the site, guess from incomplete 
 - ASO open framework and definition
 - Agent Readiness Index score model
 - Free ASO self-assessment scanner
+- Free automated MCP scanner: `@forgemeshlabs/aso-audit-mcp`
+- Early ASO examples: published scans of 10 well-known sites
 - Agent-readable discovery files
 - Public manifests for crawlers, coding agents, and AI browsers
 - Markdown source files for LLMs and citation workflows
+
+## Run the Automated Scanner
+
+The ASO scanner ships as a free MCP server on npm (beta):
+
+```bash
+# Claude Code
+claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
+```
+
+```json
+{ "mcpServers": { "aso": { "command": "npx", "args": ["-y", "@forgemeshlabs/aso-audit-mcp"] } } }
+```
+
+Then ask your agent: `"Scan example.com for agent readiness"`. It runs 33 public-signal checks across the six ASO pillars and returns an Agent Readiness Report with a prioritized fix plan. Source: [forgemeshlabs/aso-audit-mcp](https://github.com/forgemeshlabs/aso-audit-mcp).
 
 ## Core Files
 
@@ -44,8 +61,12 @@ If those signals are missing, an agent may skip the site, guess from incomplete 
 | [`robots.txt`](robots.txt) | Crawler access policy |
 | [`sitemap.xml`](sitemap.xml) | URL inventory |
 | [`_headers`](_headers) | Cloudflare Pages content types and response `Link` headers |
+| [`examples.html`](examples.html) | Early ASO examples: scans of 10 well-known sites |
+| [`examples.md`](examples.md) | Markdown twin of the examples page for agents |
 | [`.well-known/ai`](.well-known/ai) | Compact agent discovery manifest |
 | [`.well-known/agents.json`](.well-known/agents.json) | Local agent manifest index |
+| [`.well-known/agent-card.json`](.well-known/agent-card.json) | A2A agent card for the ASO Scanner agent |
+| [`.well-known/mcp/server-card.json`](.well-known/mcp/server-card.json) | MCP server card for the installable scanner |
 | [`.well-known/status`](.well-known/status) | Public status manifest |
 | [`.well-known/payments`](.well-known/payments) | Pricing and payment manifest |
 
@@ -117,7 +138,7 @@ This site currently publishes the core static ASO signals:
 - Public auth, payment, and status notes
 - JSON-LD structured data
 
-It does not currently expose a public API, OAuth flow, MCP server, A2A endpoint, x402 payment endpoint, or automated crawler-backed scanner.
+It also publishes an A2A agent card and an MCP server card, and the automated scanner is installable as a local MCP server (`npx -y @forgemeshlabs/aso-audit-mcp`). The site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.
 
 ## Use This Pattern
 

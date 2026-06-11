@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://agentsignaloptimization.com/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/examples.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/examples.md</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/ASO.md</loc>
@@ -12,7 +22,7 @@
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/index.md</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -22,12 +32,12 @@
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/llms.txt</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/agent.json</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -37,13 +47,23 @@
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/.well-known/ai</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/.well-known/agents.json</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/.well-known/agent-card.json</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/.well-known/mcp/server-card.json</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agentsignaloptimization.com/.well-known/status</loc>

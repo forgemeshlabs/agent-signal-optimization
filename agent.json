@@ -35,8 +35,16 @@
       "description": "Registry listings for services that publish agent-readable signals."
     }
   ],
+  "scanner": {
+    "package": "@forgemeshlabs/aso-audit-mcp",
+    "registry": "npm",
+    "install": "npx -y @forgemeshlabs/aso-audit-mcp",
+    "repository": "https://github.com/forgemeshlabs/aso-audit-mcp"
+  },
   "signals": {
     "llms_txt": "https://agentsignaloptimization.com/llms.txt",
+    "a2a_agent_card": "https://agentsignaloptimization.com/.well-known/agent-card.json",
+    "mcp_server_card": "https://agentsignaloptimization.com/.well-known/mcp/server-card.json",
     "sitemap": "https://agentsignaloptimization.com/sitemap.xml",
     "well_known_ai": "https://agentsignaloptimization.com/.well-known/ai",
     "well_known_agents": "https://agentsignaloptimization.com/.well-known/agents.json",

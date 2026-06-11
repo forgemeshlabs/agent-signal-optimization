@@ -18,8 +18,13 @@
     },
     {
       "name": "ASO Scanner",
-      "description": "Self-assessment scanner for public agent-readiness signals.",
+      "description": "Self-assessment scanner for public agent-readiness signals. Automated MCP scanner: npx -y @forgemeshlabs/aso-audit-mcp",
       "url": "https://agentsignaloptimization.com/#scanner"
+    },
+    {
+      "name": "Early ASO Examples",
+      "description": "Published ASO scans of 10 well-known sites with scores, findings, and method.",
+      "url": "https://agentsignaloptimization.com/examples.md"
     }
   ],
   "auth": {
@@ -31,6 +36,9 @@
   },
   "links": {
     "llms_txt": "https://agentsignaloptimization.com/llms.txt",
+    "a2a_agent_card": "https://agentsignaloptimization.com/.well-known/agent-card.json",
+    "mcp_server_card": "https://agentsignaloptimization.com/.well-known/mcp/server-card.json",
+    "examples": "https://agentsignaloptimization.com/examples.md",
     "agent_json": "https://agentsignaloptimization.com/agent.json",
     "markdown_home": "https://agentsignaloptimization.com/index.md",
     "markdown_source": "https://agentsignaloptimization.com/ASO.md",

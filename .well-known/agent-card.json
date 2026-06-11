@@ -1,0 +1,57 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "ASO Scanner",
+  "description": "Agent Signal Optimization reference agent. Scans a public site or API for the 33-signal ASO stack and returns an Agent Readiness Report with a 0-100 ASO Score, maturity level, and prioritized fix plan. A hosted A2A JSON-RPC endpoint is not published yet; the scanner currently runs locally as the @forgemeshlabs/aso-audit-mcp MCP server.",
+  "url": "https://agentsignaloptimization.com/",
+  "documentationUrl": "https://agentsignaloptimization.com/ASO.md",
+  "preferredTransport": "JSONRPC",
+  "provider": {
+    "organization": "ForgeMesh",
+    "url": "https://forgemesh.io/"
+  },
+  "version": "0.1.2",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["application/json", "text/markdown"],
+  "skills": [
+    {
+      "id": "scan_site",
+      "name": "Scan site for agent readiness",
+      "description": "Run a full ASO scan against a URL and return the Agent Readiness Report: score, level, six-pillar breakdown, and all 33 checks with evidence and recommendations.",
+      "tags": ["aso", "agent-readiness", "scanner", "audit"],
+      "examples": ["Scan example.com for agent readiness", "What's my ASO score?"]
+    },
+    {
+      "id": "get_fix_plan",
+      "name": "Get prioritized fix plan",
+      "description": "Return a prioritized remediation plan with templates for robots.txt, llms.txt, agent.json, and other ASO signals.",
+      "tags": ["aso", "remediation", "fix-plan"],
+      "examples": ["Give me a fix plan to make my site agent-ready"]
+    },
+    {
+      "id": "check_signal",
+      "name": "Check a single signal",
+      "description": "Run one specific ASO check, such as a2a-agent-card, llms-txt, or x402, against a URL.",
+      "tags": ["aso", "signal", "check"],
+      "examples": ["Check only the llms-txt signal for example.com"]
+    },
+    {
+      "id": "get_aso_framework",
+      "name": "Explain the ASO framework",
+      "description": "Return the ASO rubric: pillars, weights, maturity levels, and certification thresholds.",
+      "tags": ["aso", "framework", "rubric"],
+      "examples": ["Show me the ASO scoring rubric"]
+    }
+  ],
+  "additionalInterfaces": [
+    {
+      "transport": "MCP-stdio",
+      "url": "https://www.npmjs.com/package/@forgemeshlabs/aso-audit-mcp",
+      "description": "Run locally in any MCP client: npx -y @forgemeshlabs/aso-audit-mcp"
+    }
+  ]
+}
