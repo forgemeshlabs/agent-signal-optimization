@@ -4,7 +4,7 @@
     "domain": "agentsignaloptimization.com",
     "url": "https://agentsignaloptimization.com/"
   },
-  "status": "beta-score",
+  "status": "beta-self-scored-verified",
   "score": {
     "value": 65,
     "max": 100,
@@ -24,8 +24,8 @@
   },
   "authority": {
     "self_scored": true,
-    "verified": false,
+    "verified": "self-scored-beta",
     "certified": false,
-    "note": "Beta score only. This is not a certification or third-party endorsement."
+    "note": "Beta self-scored verification means a public report and badge exist. This is not certification or independent third-party endorsement."
   }
 }

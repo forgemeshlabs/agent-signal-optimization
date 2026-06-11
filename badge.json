@@ -1,6 +1,6 @@
 {
   "schema": "https://agentsignaloptimization.com/schemas/aso-badge.v0.json",
-  "status": "beta-score",
+  "status": "beta-self-scored-verified",
   "subject": "agentsignaloptimization.com",
   "score": 65,
   "max_score": 100,
@@ -11,6 +11,6 @@
   "report": "https://agentsignaloptimization.com/.well-known/aso-report.json",
   "badge": "https://agentsignaloptimization.com/badge.svg",
   "static_embed_badge": "https://agentsignaloptimization.com/badges/aso-3-65.svg",
-  "verified": false,
+  "verified": "self-scored-beta",
   "certified": false
 }

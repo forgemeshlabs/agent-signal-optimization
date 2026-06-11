@@ -137,7 +137,7 @@ a {
 .nav-score-label {
   padding-right: 22px;
   color: var(--accent);
-  font-size: 0.58rem;
+  font-size: 0.57rem;
 }
 
 .nav-score-level {
@@ -146,7 +146,7 @@ a {
   color: #111417;
   background: var(--accent-strong);
   border-radius: 999px;
-  font-size: 0.56rem;
+  font-size: 0.54rem;
 }
 
 .nav-score-mobile {
@@ -220,19 +220,20 @@ nav a:active,
   position: relative;
   display: grid;
   place-items: center;
-  width: min(250px, 100%);
-  min-height: 218px;
-  padding: 22px;
+  width: min(190px, 100%);
+  min-height: 236px;
+  padding: 20px 18px;
   text-align: center;
   color: var(--ink);
   background:
-    linear-gradient(180deg, rgba(100, 185, 168, 0.17), rgba(244, 240, 232, 0.018)),
+    linear-gradient(180deg, rgba(100, 185, 168, 0.24), rgba(244, 240, 232, 0.016)),
     #11171a;
-  border: 1px solid rgba(100, 185, 168, 0.62);
-  border-radius: 18px;
+  border: 2px solid rgba(100, 185, 168, 0.78);
+  border-radius: 20px;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    0 0 0 5px rgba(100, 185, 168, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(100, 185, 168, 0.16),
+    0 0 0 6px rgba(100, 185, 168, 0.08),
     0 20px 48px rgba(0, 0, 0, 0.26);
   transition: border-color 360ms var(--ease), transform 360ms var(--ease), background 360ms var(--ease);
 }
@@ -266,6 +267,8 @@ nav a:active,
   background:
     linear-gradient(180deg, rgba(100, 185, 168, 0.18), rgba(244, 240, 232, 0.025)),
     #11171a;
+}
+
 .badge-label,
 .badge-score,
 .badge-level,
@@ -277,40 +280,44 @@ nav a:active,
 }
 
 .badge-label {
-  padding-right: 30px;
+  align-self: start;
+  padding: 5px 9px;
   color: var(--accent-strong);
-  font-size: 0.78rem;
-  font-weight: 820;
+  background: rgba(100, 185, 168, 0.13);
+  border: 1px solid rgba(100, 185, 168, 0.34);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 860;
   letter-spacing: 0.08em;
 }
 
 .badge-score {
-  margin-top: 16px;
+  margin-top: 24px;
   color: var(--ink);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 880;
+  font-size: clamp(4.2rem, 8vw, 6.1rem);
+  font-weight: 900;
   letter-spacing: 0;
-  line-height: 0.9;
+  line-height: 0.78;
 }
 
 .badge-level {
-  margin-top: 16px;
-  padding: 7px 10px;
+  margin-top: 22px;
+  padding: 8px 10px;
   color: #111417;
   background: var(--accent-strong);
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 860;
   letter-spacing: 0.06em;
 }
 
 .badge-note {
-  margin-top: 18px;
-  padding-top: 14px;
+  margin-top: 16px;
+  padding-top: 12px;
   width: 100%;
   color: var(--muted);
   border-top: 1px solid rgba(244, 240, 232, 0.14);
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   font-weight: 760;
   letter-spacing: 0.08em;
 }

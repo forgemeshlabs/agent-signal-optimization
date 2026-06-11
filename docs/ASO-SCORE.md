@@ -43,7 +43,7 @@ Example display:
 
 ```html
 <a href="https://agentsignaloptimization.com/.well-known/aso-report.json">
-  <img src="https://agentsignaloptimization.com/badge.svg" alt="ASO Score: 65/100, ASO-3 Invocable">
+  <img src="https://agentsignaloptimization.com/badge.svg" alt="ASO Verified: 65/100, ASO-3 Invocable" width="190">
 </a>
 ```
 
@@ -53,8 +53,8 @@ Static beta embed:
 <a href="https://agentsignaloptimization.com/examples">
   <img
     src="https://agentsignaloptimization.com/badges/aso-3-65.svg"
-    alt="ASO Score 65/100 - ASO-3 Invocable"
-    width="220"
+    alt="ASO Verified: 65/100 - ASO-3 Invocable"
+    width="190"
   />
 </a>
 ```
