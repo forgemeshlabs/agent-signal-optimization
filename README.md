@@ -30,6 +30,7 @@ If those signals are missing, an agent may skip the site, guess from incomplete 
 - Early ASO examples: published scans of 10 well-known sites
 - Agent-readable discovery files
 - Public manifests for crawlers, coding agents, and AI browsers
+- Seal-style ASO Score Badge Beta with a public report target
 - Markdown source files for LLMs and citation workflows
 
 ## Run the Automated Scanner
@@ -139,10 +140,12 @@ This site currently publishes the core static ASO signals:
 - Score documentation
 - Response `Link` headers
 - `Content-Signal` headers
+- Seal-style `ASO VERIFIED` beta badge linked to `/.well-known/aso-report.json`
+- Static badge embed assets under `/badges/`, including `/badges/aso-3-65.svg`
 - Public auth, payment, and status notes
 - JSON-LD structured data
 
-It also publishes an A2A agent card and an MCP server card, and the automated scanner is installable as a local MCP server (`npx -y @forgemeshlabs/aso-audit-mcp`). The site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.
+It also publishes an A2A agent card, an MCP server card, and an ASO badge report. The automated scanner is installable as a local MCP server (`npx -y @forgemeshlabs/aso-audit-mcp`). The site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.
 
 ## Use This Pattern
 
@@ -177,10 +180,14 @@ http://127.0.0.1:4175/
 ## Validate
 
 ```bash
-node -e "for (const f of ['agent.json','.well-known/agents.json','.well-known/ai','.well-known/status','.well-known/payments']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('json ok')"
+node -e "for (const f of ['agent.json','badge.json','.well-known/agents.json','.well-known/ai','.well-known/status','.well-known/payments','.well-known/aso-report.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('json ok')"
 python3 - <<'PY'
+import glob
 import xml.etree.ElementTree as ET
 ET.parse('sitemap.xml')
+ET.parse('badge.svg')
+for path in glob.glob('badges/*.svg'):
+    ET.parse(path)
 print('xml ok')
 PY
 ```
