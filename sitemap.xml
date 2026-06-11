@@ -41,6 +41,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://agentsignaloptimization.com/badge.svg</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/badge.json</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://agentsignaloptimization.com/auth.md</loc>
     <lastmod>2026-06-08</lastmod>
     <priority>0.6</priority>
@@ -74,5 +84,10 @@
     <loc>https://agentsignaloptimization.com/.well-known/payments</loc>
     <lastmod>2026-06-08</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agentsignaloptimization.com/.well-known/aso-report.json</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

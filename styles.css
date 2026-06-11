@@ -71,6 +71,42 @@ a {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
+.nav-score-badge {
+  flex: 0 0 auto;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 9px;
+  color: var(--accent-strong);
+  background: rgba(100, 185, 168, 0.11);
+  border: 1px solid rgba(100, 185, 168, 0.35);
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: background 360ms var(--ease), transform 360ms var(--ease), border-color 360ms var(--ease);
+}
+
+.nav-score-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.nav-score-badge span,
+.nav-score-badge strong {
+  font-weight: 760;
+}
+
+.nav-score-badge:hover {
+  background: rgba(100, 185, 168, 0.18);
+  border-color: rgba(100, 185, 168, 0.58);
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -118,8 +154,73 @@ nav a:hover,
 }
 
 nav a:active,
-.button:active {
+.button:active,
+.nav-score-badge:active,
+.aso-badge:active {
   transform: translateY(1px) scale(0.99);
+}
+
+.aso-badge {
+  display: grid;
+  place-items: center;
+  width: min(230px, 100%);
+  min-height: 184px;
+  padding: 20px;
+  text-align: center;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(244, 240, 232, 0.09), rgba(244, 240, 232, 0.015)),
+    #11171a;
+  border: 1px solid rgba(100, 185, 168, 0.48);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 18px 44px rgba(0, 0, 0, 0.24);
+  transition: border-color 360ms var(--ease), transform 360ms var(--ease), background 360ms var(--ease);
+}
+
+.aso-badge:hover {
+  border-color: rgba(214, 245, 237, 0.7);
+  background:
+    linear-gradient(180deg, rgba(100, 185, 168, 0.18), rgba(244, 240, 232, 0.025)),
+    #11171a;
+}
+
+.aso-badge span,
+.aso-badge strong,
+.aso-badge em {
+  display: block;
+  font-family: var(--mono);
+  font-style: normal;
+  font-weight: 820;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.aso-badge span {
+  color: var(--accent-strong);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  line-height: 0.9;
+}
+
+.aso-badge strong {
+  margin-top: 8px;
+  color: var(--accent);
+  font-size: 0.94rem;
+}
+
+.aso-badge em {
+  margin-top: 28px;
+  padding-top: 16px;
+  width: 100%;
+  color: var(--ink);
+  border-top: 1px solid rgba(244, 240, 232, 0.14);
+  font-size: clamp(1.5rem, 3vw, 2.35rem);
+  line-height: 1;
+}
+
+.hero-score-badge {
+  margin: 0 0 24px;
 }
 
 .hero {
@@ -828,8 +929,8 @@ pre {
   border-radius: 22px;
 }
 
-.score-badge-card span,
-.score-badge-card em {
+.score-badge-card > span,
+.score-badge-card > em {
   display: block;
   color: var(--accent);
   font-family: var(--mono);
@@ -837,7 +938,7 @@ pre {
   font-weight: 760;
 }
 
-.score-badge-card strong {
+.score-badge-card > strong {
   display: block;
   margin: 6px 0 2px;
   font-family: var(--mono);
@@ -850,11 +951,17 @@ pre {
   color: #d5dcdb;
 }
 
+.score-badge-card p span {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-weight: 760;
+}
+
 .score-badge-card code {
   overflow-wrap: anywhere;
 }
 
-.score-badge-card a {
+.score-badge-card > a:not(.aso-badge) {
   display: inline-flex;
   margin-top: 14px;
   color: var(--accent-strong);

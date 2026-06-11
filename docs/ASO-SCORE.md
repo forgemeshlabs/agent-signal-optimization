@@ -42,8 +42,8 @@ The current public display model is a score badge, not certification:
 Example display:
 
 ```html
-<a href="https://agentsignaloptimization.com/examples">
-  <img src="https://agentsignaloptimization.com/badge/aso-3.svg" alt="ASO Score: 65/100, ASO-3 Invocable">
+<a href="https://agentsignaloptimization.com/.well-known/aso-report.json">
+  <img src="https://agentsignaloptimization.com/badge.svg" alt="ASO Score: 65/100, ASO-3 Invocable">
 </a>
 ```
 

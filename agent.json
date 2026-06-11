@@ -50,6 +50,9 @@
     "well_known_agents": "https://agentsignaloptimization.com/.well-known/agents.json",
     "status": "https://agentsignaloptimization.com/.well-known/status",
     "payments": "https://agentsignaloptimization.com/.well-known/payments",
+    "aso_report": "https://agentsignaloptimization.com/.well-known/aso-report.json",
+    "aso_badge_svg": "https://agentsignaloptimization.com/badge.svg",
+    "aso_badge_json": "https://agentsignaloptimization.com/badge.json",
     "markdown_home": "https://agentsignaloptimization.com/index.md",
     "markdown_source": "https://agentsignaloptimization.com/ASO.md",
     "auth": "https://agentsignaloptimization.com/auth.md"

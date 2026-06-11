@@ -57,6 +57,8 @@ Then ask your agent: `"Scan example.com for agent readiness"`. It runs 33 public
 | [`docs/ASO-SCORE.md`](docs/ASO-SCORE.md) | Agent Readiness Index scoring rubric |
 | [`llms.txt`](llms.txt) | LLM-readable site guide |
 | [`agent.json`](agent.json) | Service identity and capability manifest |
+| [`badge.svg`](badge.svg) | Embeddable ASO Score Badge Beta for this site |
+| [`badge.json`](badge.json) | Machine-readable badge metadata |
 | [`auth.md`](auth.md) | Public authentication notes |
 | [`robots.txt`](robots.txt) | Crawler access policy |
 | [`sitemap.xml`](sitemap.xml) | URL inventory |
@@ -69,6 +71,7 @@ Then ask your agent: `"Scan example.com for agent readiness"`. It runs 33 public
 | [`.well-known/mcp/server-card.json`](.well-known/mcp/server-card.json) | MCP server card for the installable scanner |
 | [`.well-known/status`](.well-known/status) | Public status manifest |
 | [`.well-known/payments`](.well-known/payments) | Pricing and payment manifest |
+| [`.well-known/aso-report.json`](.well-known/aso-report.json) | Public ASO Score Badge Beta report |
 
 ## Agent Signal Stack
 

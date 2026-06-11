@@ -1,0 +1,30 @@
+{
+  "schema": "https://agentsignaloptimization.com/schemas/aso-report.v0.json",
+  "subject": {
+    "domain": "agentsignaloptimization.com",
+    "url": "https://agentsignaloptimization.com/"
+  },
+  "status": "beta-score",
+  "score": {
+    "value": 65,
+    "max": 100,
+    "level": "ASO-3",
+    "level_name": "Invocable"
+  },
+  "scanner": {
+    "package": "@forgemeshlabs/aso-audit-mcp",
+    "methodology": "ASO Audit v0.1"
+  },
+  "artifacts": {
+    "badge_svg": "https://agentsignaloptimization.com/badge.svg",
+    "badge_json": "https://agentsignaloptimization.com/badge.json",
+    "score_rubric": "https://agentsignaloptimization.com/docs/ASO-SCORE.md",
+    "examples": "https://agentsignaloptimization.com/examples"
+  },
+  "authority": {
+    "self_scored": true,
+    "verified": false,
+    "certified": false,
+    "note": "Beta score only. This is not a certification or third-party endorsement."
+  }
+}
