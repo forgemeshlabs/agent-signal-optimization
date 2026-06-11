@@ -9,14 +9,22 @@
       content="We ran the ASO scanner against 10 of the most recognizable sites on the internet. The best score was 66/100. Most of the modern web is still nearly invisible to autonomous agents."
     >
     <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://agentsignaloptimization.com/examples.html">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="canonical" href="https://agentsignaloptimization.com/examples">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Agent Signal Optimization">
+    <meta property="og:title" content="We scanned 10 of the most recognizable sites on the internet. The best score was 66/100.">
+    <meta property="og:description" content="Early ASO examples: Cloudflare 66, Vercel 46, Stripe 39, GitHub 33, OpenAI 19, Amazon 15. Every site lets AI crawlers in. Almost none tell agents what they sell, what it costs, or how to act.">
+    <meta property="og:url" content="https://agentsignaloptimization.com/examples">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="We scanned 10 of the most recognizable sites on the internet. The best score was 66/100.">
+    <meta name="twitter:description" content="Early ASO examples: Cloudflare 66, Vercel 46, Stripe 39, GitHub 33, OpenAI 19, Amazon 15. See the full agent-readiness leaderboard.">
+    <link rel="stylesheet" href="/styles.css?v=20260611">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "Early ASO Examples: Agent Readiness Scans of 10 Well-Known Sites",
-        "url": "https://agentsignaloptimization.com/examples.html",
+        "url": "https://agentsignaloptimization.com/examples",
         "description": "Point-in-time automated Agent Signal Optimization scans of 10 well-known apex domains, scored 0-100 on the Agent Readiness Index.",
         "dateCreated": "2026-06-11",
         "creator": {
@@ -25,6 +33,28 @@
           "url": "https://forgemesh.io/"
         },
         "measurementTechnique": "@forgemeshlabs/aso-audit-mcp v0.1.2 automated public-signal scan"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "ASO Score Leaderboard, 2026-06-11",
+        "url": "https://agentsignaloptimization.com/examples",
+        "numberOfItems": 10,
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "cloudflare.com - ASO Score 66 (ASO-3 Invocable)" },
+          { "@type": "ListItem", "position": 2, "name": "vercel.com - ASO Score 46 (ASO-2 Understandable)" },
+          { "@type": "ListItem", "position": 3, "name": "stripe.com - ASO Score 39 (ASO-2 Understandable)" },
+          { "@type": "ListItem", "position": 4, "name": "shopify.com - ASO Score 39 (ASO-2 Understandable)" },
+          { "@type": "ListItem", "position": 5, "name": "github.com - ASO Score 33 (ASO-2 Understandable)" },
+          { "@type": "ListItem", "position": 6, "name": "huggingface.co - ASO Score 29 (ASO-1 Discoverable)" },
+          { "@type": "ListItem", "position": 7, "name": "anthropic.com - ASO Score 25 (ASO-1 Discoverable)" },
+          { "@type": "ListItem", "position": 8, "name": "nike.com - ASO Score 20 (ASO-1 Discoverable)" },
+          { "@type": "ListItem", "position": 9, "name": "openai.com - ASO Score 19 (ASO-1 Discoverable)" },
+          { "@type": "ListItem", "position": 10, "name": "amazon.com - ASO Score 15 (ASO-1 Discoverable)" }
+        ]
       }
     </script>
   </head>
@@ -40,7 +70,7 @@
         <a href="/#score">Score</a>
         <a href="/#standards">Standards</a>
         <a href="/#scanner">Scanner</a>
-        <a href="/examples.html" aria-current="page">Examples</a>
+        <a href="/examples" aria-current="page">Examples</a>
       </nav>
     </header>
 
