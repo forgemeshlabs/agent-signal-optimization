@@ -39,6 +39,9 @@
 /badge.svg
   Content-Type: image/svg+xml; charset=utf-8
 
+/badges/*.svg
+  Content-Type: image/svg+xml; charset=utf-8
+
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 

@@ -17,6 +17,7 @@
   },
   "artifacts": {
     "badge_svg": "https://agentsignaloptimization.com/badge.svg",
+    "static_embed_badge": "https://agentsignaloptimization.com/badges/aso-3-65.svg",
     "badge_json": "https://agentsignaloptimization.com/badge.json",
     "score_rubric": "https://agentsignaloptimization.com/docs/ASO-SCORE.md",
     "examples": "https://agentsignaloptimization.com/examples"

@@ -19,6 +19,7 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 - [Status Manifest](https://agentsignaloptimization.com/.well-known/status)
 - [Payments Manifest](https://agentsignaloptimization.com/.well-known/payments)
 - [ASO Score Badge](https://agentsignaloptimization.com/badge.svg)
+- [Static ASO-3 65 Badge](https://agentsignaloptimization.com/badges/aso-3-65.svg)
 - [ASO Badge Report](https://agentsignaloptimization.com/.well-known/aso-report.json)
 
 ## Signal Stack

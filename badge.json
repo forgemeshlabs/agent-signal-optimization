@@ -10,6 +10,7 @@
   "scanner_methodology": "ASO Audit v0.1",
   "report": "https://agentsignaloptimization.com/.well-known/aso-report.json",
   "badge": "https://agentsignaloptimization.com/badge.svg",
+  "static_embed_badge": "https://agentsignaloptimization.com/badges/aso-3-65.svg",
   "verified": false,
   "certified": false
 }

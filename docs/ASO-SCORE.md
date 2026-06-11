@@ -47,6 +47,22 @@ Example display:
 </a>
 ```
 
+Static beta embed:
+
+```html
+<a href="https://agentsignaloptimization.com/examples">
+  <img
+    src="https://agentsignaloptimization.com/badges/aso-3-65.svg"
+    alt="ASO Score 65/100 - ASO-3 Invocable"
+    width="220"
+  />
+</a>
+```
+
+Static level badges are available at `/badges/aso-0.svg` through `/badges/aso-5.svg`. These are display assets only. A badge should link to a public report before it is treated as verified.
+
+Future dynamic endpoints should follow `/badge/:domain.svg`, `/report/:domain`, and `/report/:domain.json`, but they should render only from stored report JSON. Random domains should not auto-generate trusted-looking scores without a saved report.
+
 ## Verification Roadmap
 
 ASO uses a staged authority model:

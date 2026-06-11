@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="150" viewBox="0 0 220 150" role="img" aria-labelledby="title desc">
+  <title id="title">ASO-4 Trustable, Score 70-89</title>
+  <desc id="desc">Static Agent Signal Optimization level badge.</desc>
+  <rect width="220" height="150" rx="14" fill="#101214"/>
+  <rect x="0.5" y="0.5" width="219" height="149" rx="13.5" fill="none" stroke="#d6f5ed" stroke-opacity="0.7"/>
+  <path d="M16 18h188" stroke="#f4f0e8" stroke-opacity="0.12"/>
+  <text x="110" y="55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="800" fill="#d6f5ed">ASO-4</text>
+  <text x="110" y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" letter-spacing="1.4" fill="#64b9a8">TRUSTABLE</text>
+  <path d="M42 96h136" stroke="#f4f0e8" stroke-opacity="0.16"/>
+  <text x="110" y="125" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="29" font-weight="800" fill="#f4f0e8">70-89</text>
+  <text x="110" y="141" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" letter-spacing="1.2" fill="#a8b0b8">BETA SCORE</text>
+</svg>

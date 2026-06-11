@@ -59,6 +59,7 @@ Then ask your agent: `"Scan example.com for agent readiness"`. It runs 33 public
 | [`agent.json`](agent.json) | Service identity and capability manifest |
 | [`badge.svg`](badge.svg) | Embeddable ASO Score Badge Beta for this site |
 | [`badge.json`](badge.json) | Machine-readable badge metadata |
+| [`badges/`](badges/) | Static ASO level and score badge SVGs |
 | [`auth.md`](auth.md) | Public authentication notes |
 | [`robots.txt`](robots.txt) | Crawler access policy |
 | [`sitemap.xml`](sitemap.xml) | URL inventory |
