@@ -59,6 +59,17 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 
 It is the successor discipline to Search Engine Optimization (SEO). Where SEO optimized for human searchers clicking through blue links, ASO optimizes for autonomous agents that discover, evaluate, invoke, and pay for services without human intervention.
 
+### Google Alignment
+
+Google's current guidance for generative AI Search does not replace SEO with a new acronym. It says AI Overviews and AI Mode still depend on Google's core Search ranking and quality systems, crawlable pages, helpful non-commodity content, and clear technical structure. Google also says `llms.txt` and special AI markdown files are ignored by Google Search itself.
+
+ASO should therefore be framed correctly:
+
+- For Google Search and Google generative AI Search, ASO inherits SEO fundamentals: crawlability, indexability, structured data where useful, helpful content, page experience, and Search Console hygiene.
+- For browser agents and AI assistants outside Google Search, ASO adds agent-facing signals such as `llms.txt`, Markdown fallbacks, manifests, OpenAPI, MCP, A2A, payment metadata, and registry presence.
+- For browser agents specifically, Google's web.dev guidance emphasizes clean machine-readable page representations: semantic HTML, visible action targets, stable layouts, labels tied to inputs, and meaningful accessibility-tree roles, names, and states.
+- For commerce, UCP, AP2, A2A, MCP, x402, and related protocols are agent-readiness infrastructure, not Google Search ranking factors.
+
 ### The Translation Frame
 
 Every major technology shift requires a new optimization discipline:

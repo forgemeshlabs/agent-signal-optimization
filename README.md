@@ -6,6 +6,12 @@ ASO is an open framework that helps organizations navigate and implement emergin
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
+## Google Agent Readiness Update
+
+Google's current Search guidance is clear: generative AI search still depends on foundational SEO, crawlability, helpful non-commodity content, and technical clarity. Google also says `llms.txt` and other special AI markdown files are ignored by Google Search itself. ASO therefore treats `llms.txt` as a useful signal for non-Google agents and MCP clients, not as a Google Search ranking factor.
+
+For browser agents, Google's web.dev guidance adds a practical readiness layer: clean DOM structure, semantic buttons and links, labels connected to inputs, meaningful accessibility-tree roles/names/states, stable layouts, and no hidden overlay traps. The ASO scanner now includes these browser-agent UX signals alongside discovery, identity, trust, commerce, reputation, and memory.
+
 This repository is the public reference implementation for [AgentSignalOptimization.com](https://agentsignaloptimization.com/).
 
 ## Why This Exists
@@ -46,7 +52,12 @@ claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
 { "mcpServers": { "aso": { "command": "npx", "args": ["-y", "@forgemeshlabs/aso-audit-mcp"] } } }
 ```
 
-Then ask your agent: `"Scan example.com for agent readiness"`. It runs 33 public-signal checks across the six ASO pillars and returns an Agent Readiness Report with a prioritized fix plan. Source: [forgemeshlabs/aso-audit-mcp](https://github.com/forgemeshlabs/aso-audit-mcp).
+Then ask your agent: `"Scan example.com for agent readiness"`. It runs 34 public-signal checks across the six ASO pillars and returns an Agent Readiness Report with a prioritized fix plan. Source: [forgemeshlabs/aso-audit-mcp](https://github.com/forgemeshlabs/aso-audit-mcp).
+
+Namespace expansion packages are prepared from the same scanner core:
+
+- `@forgemeshlabs/aso-score-mcp` for searches and installs around "ASO score".
+- `@forgemeshlabs/agent-readiness-mcp` for the broader "agent readiness" category.
 
 ## Core Files
 
@@ -87,6 +98,7 @@ ASO tracks the public standards and artifacts agents increasingly inspect:
 | Capabilities | Shows agents what can be invoked | API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP |
 | Commerce | Makes offers, pricing, and purchase paths machine-readable | payment manifests, x402, MPP, UCP, ACP |
 | Verification | Proves the claim is real and current | syntax, reachability, consistency, provenance, status, reputation, registry evidence |
+| Browser-agent UX | Helps visual, DOM, and accessibility-tree agents complete tasks | semantic HTML, linked labels, stable layouts, visible action targets |
 
 ## Agent Readiness vs ASO
 

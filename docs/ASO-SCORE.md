@@ -21,7 +21,7 @@ The ASO Score, formally the Agent Readiness Index, is a 0-100 score for measurin
 | --- | ---: | --- |
 | Discoverability | 20 | robots.txt, sitemap.xml, llms.txt, well-known endpoints, directory listings |
 | Identity | 20 | schema.org, JSON-LD, OpenAPI, agent.json, semantic documentation |
-| Trust | 15 | HTTPS, auth clarity, governance, provenance, operational status |
+| Trust | 15 | HTTPS, auth clarity, governance, provenance, browser-agent UX, operational status |
 | Commerce | 15 | pricing signals, payment manifest, x402, agent-safe purchase path |
 | Reputation (emerging) | 15 | uptime, latency, success rates, citations, endorsements, directory presence |
 | Memory | 15 | persistent identity, stable URLs, consistent signals, versioning, return paths |
@@ -29,6 +29,8 @@ The ASO Score, formally the Agent Readiness Index, is a 0-100 score for measurin
 ## Scanner Interpretation
 
 The current scanner is a self-assessment calculator. It maps published signals to the Agent Readiness Index. Scores are directional until verified by an automated crawler or manual ASO audit.
+
+Current scanner releases also separate Google Search guidance from broader agent readiness. Google Search does not use `llms.txt` or special AI markdown files for generative AI visibility, but other agents may use them. Google/web.dev browser-agent guidance does apply directly to agent readiness: semantic HTML, linked labels, accessible roles/names/states, stable layouts, and visible action targets improve the machine-readable representation agents use.
 
 ## Score Badge Beta
 

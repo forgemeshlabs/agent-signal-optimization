@@ -6,6 +6,8 @@ ASO is an open framework that helps organizations navigate and implement emergin
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
+Google's current generative AI Search guidance says foundational SEO still matters, `llms.txt` is ignored by Google Search itself, and browser agents benefit from clean DOM, screenshot, and accessibility-tree signals. ASO keeps `llms.txt` for non-Google agents while also tracking agent-friendly UX signals such as semantic controls, linked labels, stable layouts, and visible action targets.
+
 ## Core References
 
 - [ASO Framework](https://agentsignaloptimization.com/ASO.md)
@@ -32,6 +34,7 @@ ASO tracks the public artifacts agents increasingly inspect:
 - Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP
 - Commerce: machine-readable pricing, payment manifests, x402, MPP, UCP, ACP
 - Verification: syntax, reachability, consistency, provenance, status, reputation, public reports, reproducible scan evidence
+- Browser-agent UX: semantic HTML, labels linked to inputs, meaningful roles/names/states, stable layouts, visible action targets
 
 ## Current Site Status
 

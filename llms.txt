@@ -8,6 +8,8 @@ AgentSignalOptimization.com is intended to be a public reference for ASO: the op
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
+Google alignment note: Google Search's generative AI guidance says core SEO, crawlability, helpful content, and technical clarity remain the foundation. Google Search ignores `llms.txt` and special AI markdown files, so this site uses `llms.txt` for non-Google agents and MCP clients, not as a claimed Google ranking factor. Google's browser-agent guidance does support agent-friendly UX signals: semantic HTML, linked labels, stable layouts, and accessible roles/names/states.
+
 ## Core Reading
 
 - [ASO Markdown Source](https://agentsignaloptimization.com/ASO.md): Canonical Markdown source document for agents, citations, audits, and implementation references.
@@ -42,10 +44,11 @@ ASO is built on emerging agent-readiness standards, discovery conventions, and c
 - Capabilities: API Catalog, OAuth discovery, Auth.md, MCP Server Cards, A2A Agent Cards, Agent Skills, WebMCP.
 - Commerce: machine-readable pricing, payment manifests, x402, MPP, UCP, ACP.
 - Verification: syntax, reachability, consistency, provenance, status, reputation, registry evidence.
+- Browser-agent UX: semantic HTML, linked labels, stable layouts, visible action targets, accessibility-tree clarity.
 
 ## ASO Scanner (MCP)
 
-The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp
+The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp. Namespace variants prepared: `@forgemeshlabs/aso-score-mcp` and `@forgemeshlabs/agent-readiness-mcp`.
 
 ## Recommended Citation
 

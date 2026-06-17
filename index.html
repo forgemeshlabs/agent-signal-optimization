@@ -625,6 +625,7 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           <div role="row"><span>robots.txt</span><span>Yes</span><span>Yes</span></div>
           <div role="row"><span>sitemap.xml</span><span>Yes</span><span>Yes</span></div>
           <div role="row"><span>llms.txt and Markdown access</span><span>Yes</span><span>Yes</span></div>
+          <div role="row"><span>Agent-friendly browser UX</span><span>Yes</span><span>Yes</span></div>
           <div role="row"><span>MCP, API, and auth discovery</span><span>Yes</span><span>Yes</span></div>
           <div role="row"><span>Trust and provenance</span><span>Partial</span><span>Yes</span></div>
           <div role="row"><span>Reputation and third-party evidence</span><span>No</span><span>Yes, emerging</span></div>
@@ -904,11 +905,24 @@ claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
           </div>
           <p class="install-note">
             The checklist below is the manual self-assessment. The scanner runs
-            the same framework automatically: 33 public-signal checks across
+            the same framework automatically: 34 public-signal checks across
             the six pillars, an ASO Score, and a prioritized fix plan.
             <a href="https://github.com/forgemeshlabs/aso-audit-mcp" rel="noopener">Source on GitHub</a>
             |
             <a href="https://www.npmjs.com/package/@forgemeshlabs/aso-audit-mcp" rel="noopener">npm package</a>
+          </p>
+          <p class="install-note">
+            Google Search still depends on SEO fundamentals for generative AI
+            features and ignores <code>llms.txt</code>. ASO keeps
+            <code>llms.txt</code> for non-Google agents and now also checks
+            Google's browser-agent UX guidance: semantic controls, linked
+            labels, stable layouts, and accessible action signals.
+          </p>
+          <p class="install-note">
+            Namespace variants are prepared from the same scanner core:
+            <code>@forgemeshlabs/aso-score-mcp</code> for ASO Score and
+            <code>@forgemeshlabs/agent-readiness-mcp</code> for Agent
+            Readiness.
           </p>
         </div>
 
