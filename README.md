@@ -54,10 +54,10 @@ claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
 
 Then ask your agent: `"Scan example.com for agent readiness"`. It runs 34 public-signal checks across the six ASO pillars and returns an Agent Readiness Report with a prioritized fix plan. Source: [forgemeshlabs/aso-audit-mcp](https://github.com/forgemeshlabs/aso-audit-mcp).
 
-Namespace expansion packages are prepared from the same scanner core:
+Namespace expansion packages are published from the same scanner core:
 
-- `@forgemeshlabs/aso-score-mcp` for searches and installs around "ASO score".
-- `@forgemeshlabs/agent-readiness-mcp` for the broader "agent readiness" category.
+- [`@forgemeshlabs/aso-score-mcp`](https://www.npmjs.com/package/@forgemeshlabs/aso-score-mcp) for searches and installs around "ASO score".
+- [`@forgemeshlabs/agent-readiness-mcp`](https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp) for the broader "agent readiness" category.
 
 ## Core Files
 

@@ -48,7 +48,7 @@ Google alignment note: Google Search's generative AI guidance says core SEO, cra
 
 ## ASO Scanner (MCP)
 
-The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp. Namespace variants prepared: `@forgemeshlabs/aso-score-mcp` and `@forgemeshlabs/agent-readiness-mcp`.
+The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp. Published namespace variants: `@forgemeshlabs/aso-score-mcp` (https://www.npmjs.com/package/@forgemeshlabs/aso-score-mcp) and `@forgemeshlabs/agent-readiness-mcp` (https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp).
 
 ## Recommended Citation
 
