@@ -1,8 +1,8 @@
 {
   "name": "aso",
   "title": "ASO Scanner MCP",
-  "description": "Free Agent Readiness scanner as an MCP server. Measures the ASO Score (Agent Signal Optimization) across discovery, identity, trust, commerce, reputation, and memory signals. Includes A2A agent card and MCP server card validation.",
-  "version": "0.1.2",
+  "description": "Free Agent Readiness scanner as an MCP server. Measures the ASO Score across discovery, identity, trust, commerce, reputation, and memory, and includes a deterministic no-spend x402 v2 endpoint audit.",
+  "version": "0.2.0",
   "websiteUrl": "https://agentsignaloptimization.com/",
   "repository": {
     "url": "https://github.com/forgemeshlabs/aso-audit-mcp",
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "@forgemeshlabs/aso-audit-mcp",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "transport": {
         "type": "stdio",
         "command": "npx",
@@ -22,7 +22,8 @@
   ],
   "capabilities": {
     "tools": [
-      { "name": "scan_site", "description": "Full ASO scan: Agent Readiness Report with score, level, pillar breakdown, and all 33 checks." },
+      { "name": "scan_site", "description": "Full ASO scan: Agent Readiness Report with score, level, pillar breakdown, and all 34 checks." },
+      { "name": "audit_x402_endpoint", "description": "Deterministic no-spend x402 v2 endpoint audit with score, grade, per-check verdicts, and observed protocol metadata." },
       { "name": "get_fix_plan", "description": "Prioritized remediation plan with templates for robots.txt, llms.txt, agent.json, and other ASO signals." },
       { "name": "check_signal", "description": "Run one specific check, such as a2a-agent-card, llms-txt, or x402." },
       { "name": "list_checks", "description": "Catalog of every check with specification links." },

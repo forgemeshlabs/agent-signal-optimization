@@ -6,6 +6,8 @@
 
 AgentSignalOptimization.com is intended to be a public reference for ASO: the open framework, score model, scanner, audit method, score-badge roadmap, verified reports, and monitoring practices.
 
+ASO is a living framework. Checks are versioned and reviewed against `/SOURCES.md`, which labels stable standards, current protocol contracts, release candidates, drafts, vendor guidance, and community conventions separately.
+
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It organizes those technologies into a practical framework teams can use.
 
 Google alignment note: Google Search's generative AI guidance says core SEO, crawlability, helpful content, and technical clarity remain the foundation. Google Search ignores `llms.txt` and special AI markdown files, so this site uses `llms.txt` for non-Google agents and MCP clients, not as a claimed Google ranking factor. Google's browser-agent guidance does support agent-friendly UX signals: semantic HTML, linked labels, stable layouts, and accessible roles/names/states.
@@ -13,6 +15,7 @@ Google alignment note: Google Search's generative AI guidance says core SEO, cra
 ## Core Reading
 
 - [ASO Markdown Source](https://agentsignaloptimization.com/ASO.md): Canonical Markdown source document for agents, citations, audits, and implementation references.
+- [ASO Source Registry](https://agentsignaloptimization.com/SOURCES.md): Dated upstream source list and maintenance policy for the living framework.
 - [Markdown Homepage](https://agentsignaloptimization.com/index.md): Token-efficient summary of the homepage and signal stack.
 - [ASO Score Model](https://agentsignaloptimization.com/docs/ASO-SCORE.md): The 0-100 Agent Readiness Index and maturity levels.
 - [Early ASO Examples](https://agentsignaloptimization.com/examples.md): Published ASO scans of 10 well-known sites (2026-06-11) with scores, findings, and method.
@@ -48,7 +51,7 @@ Google alignment note: Google Search's generative AI guidance says core SEO, cra
 
 ## ASO Scanner (MCP)
 
-The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, get_fix_plan, check_signal, list_checks, get_aso_framework. Source: https://github.com/forgemeshlabs/aso-audit-mcp. Published namespace variants: `@forgemeshlabs/aso-score-mcp` (https://www.npmjs.com/package/@forgemeshlabs/aso-score-mcp) and `@forgemeshlabs/agent-readiness-mcp` (https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp).
+The automated ASO scanner is a free MCP server published on npm as `@forgemeshlabs/aso-audit-mcp` (beta). Install in Claude Code with `claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp`, or configure any MCP client to run `npx -y @forgemeshlabs/aso-audit-mcp`. Tools: scan_site, audit_x402_endpoint, get_fix_plan, check_signal, list_checks, get_aso_framework. The x402 audit is deterministic and no-spend: it validates the unpaid v2 challenge but never sends `PAYMENT-SIGNATURE`. Source: https://github.com/forgemeshlabs/aso-audit-mcp. Published namespace variants: `@forgemeshlabs/aso-score-mcp` (https://www.npmjs.com/package/@forgemeshlabs/aso-score-mcp) and `@forgemeshlabs/agent-readiness-mcp` (https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp).
 
 ## Recommended Citation
 

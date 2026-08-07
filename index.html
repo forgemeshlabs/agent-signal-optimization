@@ -652,6 +652,13 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
             terms. The score matters because agents do not reward intent; they
             reward surfaces they can verify.
           </p>
+          <p>
+            ASO is a living framework. The underlying standards are moving
+            quickly, so checks are versioned, dated, and reviewed against a
+            public <a class="text-link" href="/SOURCES.md">source registry</a>.
+            Drafts and optional protocols stay advisory until they apply to the
+            service being scanned.
+          </p>
         </div>
         <div class="signal-graphic" aria-label="Agent Signal Optimization inspection flow">
           <div class="signal-prompt">
@@ -776,14 +783,13 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
           </article>
         </div>
         <div class="gap-note">
-          <strong>Phase-1 scanner gap:</strong>
-          the current ASO self-assessment scores the visible basics. The live
-          site now publishes Link headers, Content Signals, Markdown fallback
-          files, and a Pages Function for <code>Accept: text/markdown</code>.
-          A full crawler should still add automated checks for DNS-AID or
-          DNS-level agent discovery signals where supported, Web Bot Auth,
-          API Catalog, OAuth metadata, Auth.md, MCP Server Cards, A2A
-          Agent Cards, Agent Skills, WebMCP, and agentic commerce protocols.
+          <strong>Scanner v0.2.0:</strong>
+          the automated scanner runs 34 origin-level checks and now includes a
+          separate deterministic x402 v2 endpoint audit. It validates live 402
+          challenges without sending a payment signature, and returns a score,
+          grade, compliance verdict, per-check results, and observed protocol
+          metadata. Optional and draft signals remain visible, but they should
+          only affect a service when they apply to what it actually offers.
         </div>
         <div class="applicability-panel">
           <div>
@@ -906,7 +912,9 @@ claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
           <p class="install-note">
             The checklist below is the manual self-assessment. The scanner runs
             the same framework automatically: 34 public-signal checks across
-            the six pillars, an ASO Score, and a prioritized fix plan.
+            the six pillars, an ASO Score, and a prioritized fix plan. The
+            <code>audit_x402_endpoint</code> tool adds a no-spend x402 v2
+            compliance report for individual paid routes.
             <a href="https://github.com/forgemeshlabs/aso-audit-mcp" rel="noopener">Source on GitHub</a>
             |
             <a href="https://www.npmjs.com/package/@forgemeshlabs/aso-audit-mcp" rel="noopener">npm package</a>

@@ -38,6 +38,8 @@
   "scanner": {
     "package": "@forgemeshlabs/aso-audit-mcp",
     "registry": "npm",
+    "version": "0.2.0",
+    "tools": ["scan_site", "audit_x402_endpoint", "get_fix_plan", "check_signal", "list_checks", "get_aso_framework"],
     "install": "npx -y @forgemeshlabs/aso-audit-mcp",
     "repository": "https://github.com/forgemeshlabs/aso-audit-mcp"
   },

@@ -1,19 +1,23 @@
 {
-  "protocolVersion": "0.3.0",
   "name": "ASO Scanner",
-  "description": "Agent Signal Optimization reference agent. Scans a public site or API for the 33-signal ASO stack and returns an Agent Readiness Report with a 0-100 ASO Score, maturity level, and prioritized fix plan. A hosted A2A JSON-RPC endpoint is not published yet; the scanner currently runs locally as the @forgemeshlabs/aso-audit-mcp MCP server.",
-  "url": "https://agentsignaloptimization.com/",
+  "description": "Agent Signal Optimization reference agent. Scans a public site or API across 34 checks and returns an Agent Readiness Report with a 0-100 ASO Score, maturity level, and prioritized fix plan. It also audits individual x402 v2 endpoints without spending. A hosted A2A endpoint is not published yet; the scanner currently runs locally as the @forgemeshlabs/aso-audit-mcp MCP server.",
+  "supportedInterfaces": [
+    {
+      "url": "https://agentsignaloptimization.com/",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
   "documentationUrl": "https://agentsignaloptimization.com/ASO.md",
-  "preferredTransport": "JSONRPC",
   "provider": {
     "organization": "ForgeMesh",
     "url": "https://forgemesh.io/"
   },
-  "version": "0.1.2",
+  "version": "0.2.0",
   "capabilities": {
     "streaming": false,
     "pushNotifications": false,
-    "stateTransitionHistory": false
+    "extensions": []
   },
   "defaultInputModes": ["text/plain"],
   "defaultOutputModes": ["application/json", "text/markdown"],
@@ -45,6 +49,13 @@
       "description": "Return the ASO rubric: pillars, weights, maturity levels, and certification thresholds.",
       "tags": ["aso", "framework", "rubric"],
       "examples": ["Show me the ASO scoring rubric"]
+    },
+    {
+      "id": "audit_x402_endpoint",
+      "name": "Audit x402 v2 endpoint",
+      "description": "Run a deterministic no-spend audit of one paid endpoint and return a score, grade, compliance verdict, per-check results, and observed protocol metadata.",
+      "tags": ["x402", "payments", "compliance", "audit"],
+      "examples": ["Audit https://example.com/paid for x402 v2 compliance"]
     }
   ],
   "additionalInterfaces": [

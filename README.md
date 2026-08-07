@@ -6,6 +6,8 @@ ASO is an open framework that helps organizations navigate and implement emergin
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
+ASO is maintained as a living framework. [`SOURCES.md`](SOURCES.md) records the upstream specifications, their current maturity, the review date, and the policy for changing checks as the ecosystem evolves.
+
 ## Google Agent Readiness Update
 
 Google's current Search guidance is clear: generative AI search still depends on foundational SEO, crawlability, helpful non-commodity content, and technical clarity. Google also says `llms.txt` and other special AI markdown files are ignored by Google Search itself. ASO therefore treats `llms.txt` as a useful signal for non-Google agents and MCP clients, not as a Google Search ranking factor.
@@ -54,6 +56,8 @@ claude mcp add aso -- npx -y @forgemeshlabs/aso-audit-mcp
 
 Then ask your agent: `"Scan example.com for agent readiness"`. It runs 34 public-signal checks across the six ASO pillars and returns an Agent Readiness Report with a prioritized fix plan. Source: [forgemeshlabs/aso-audit-mcp](https://github.com/forgemeshlabs/aso-audit-mcp).
 
+Version 0.2.0 also exposes `audit_x402_endpoint`: a deterministic, no-spend x402 v2 challenge audit with a 0-100 score, grade, compliance verdict, per-check results, and observed schemes, networks, and extensions.
+
 Namespace expansion packages are published from the same scanner core:
 
 - [`@forgemeshlabs/aso-score-mcp`](https://www.npmjs.com/package/@forgemeshlabs/aso-score-mcp) for searches and installs around "ASO score".
@@ -66,6 +70,7 @@ Namespace expansion packages are published from the same scanner core:
 | [`index.html`](index.html) | Human-readable reference site, framework, score, scanner, and visual signal-stack explainer |
 | [`index.md`](index.md) | Token-efficient Markdown homepage fallback |
 | [`ASO.md`](ASO.md) | Canonical ASO framework source |
+| [`SOURCES.md`](SOURCES.md) | Dated upstream standards registry and living-framework maintenance policy |
 | [`docs/ASO-SCORE.md`](docs/ASO-SCORE.md) | Agent Readiness Index scoring rubric |
 | [`llms.txt`](llms.txt) | LLM-readable site guide |
 | [`agent.json`](agent.json) | Service identity and capability manifest |

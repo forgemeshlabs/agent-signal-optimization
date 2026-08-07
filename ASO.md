@@ -57,6 +57,14 @@ it, call it, pay for it, and remember it later?"
 
 ASO is built on emerging agent-readiness standards, discovery conventions, and commerce protocols including A2A, MCP, x402, llms.txt, Agent Readiness, and agent discovery initiatives. It does not claim to invent those technologies; it organizes them into a practical framework teams can use.
 
+ASO is a living framework, not a frozen checklist. Upstream protocols can add
+fields, replace discovery mechanisms, or move from draft to stable status in a
+matter of weeks. Scanner releases therefore record their version and review
+date, and [`SOURCES.md`](/SOURCES.md) separates stable standards from current
+protocol contracts, release candidates, drafts, vendor guidance, and community
+conventions. A signal is only required when it applies to what the service
+actually offers.
+
 It is the successor discipline to Search Engine Optimization (SEO). Where SEO optimized for human searchers clicking through blue links, ASO optimizes for autonomous agents that discover, evaluate, invoke, and pay for services without human intervention.
 
 ### Google Alignment
@@ -203,7 +211,7 @@ ASO is not one file. It is the full public signal stack an agent can inspect bef
 | Commerce | Understand price, payment terms, purchase rules, and agent-safe checkout | Machine-readable pricing, `/.well-known/payments`, x402, MPP, UCP, ACP |
 | Verification | Check whether the claim is real, current, consistent, and auditable | Syntax validation, reachable URLs, status pages, provenance, reputation, public reports, reproducible scan evidence |
 
-The phase-1 ASO scanner is a self-assessment of visible basics. A full ASO crawler should automate this stack, map failures to the Agent Readiness Index, and generate a remediation plan.
+The ASO scanner automates 34 origin-level checks, maps evidence to the Agent Readiness Index, and generates a remediation plan. Its separate `audit_x402_endpoint` tool validates an unpaid x402 v2 challenge and returns a deterministic score, grade, compliance verdict, per-check results, and observed schemes, networks, and extensions. It never sends a payment signature, so challenge compliance does not claim to prove settlement or paid-response quality.
 
 ### How ASO Differs From Agent Readiness
 
