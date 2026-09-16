@@ -56,3 +56,7 @@ The automated ASO scanner is a free MCP server published on npm as `@forgemeshla
 ## Recommended Citation
 
 ASO is an open framework that helps organizations navigate and implement emerging agent standards and technologies.
+
+## Hosted scanner
+- https://aso.forgemesh.io/ — free ASO Score checker (enter a URL, get score, level, 34 checks, fix plan)
+- https://aso.forgemesh.io/api/scan?url=https://example.com — free JSON API for agents (rate limited); OpenAPI: https://aso.forgemesh.io/api/openapi.json

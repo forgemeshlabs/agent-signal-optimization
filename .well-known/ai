@@ -18,8 +18,8 @@
     },
     {
       "name": "ASO Scanner",
-      "description": "Self-assessment scanner for public agent-readiness signals. Automated MCP scanner: npx -y @forgemeshlabs/aso-audit-mcp",
-      "url": "https://agentsignaloptimization.com/#scanner"
+      "description": "Hosted ASO Score scanner: 34 public-signal checks, 0-100 score, fix plan. Free JSON API: https://aso.forgemesh.io/api/scan?url=… Local MCP: npx -y @forgemeshlabs/aso-audit-mcp",
+      "url": "https://aso.forgemesh.io/"
     },
     {
       "name": "Early ASO Examples",

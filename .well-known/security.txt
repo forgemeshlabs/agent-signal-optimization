@@ -1,0 +1,5 @@
+Contact: mailto:hello@forgemesh.io
+Expires: 2027-09-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://agentsignaloptimization.com/.well-known/security.txt
+Policy: https://github.com/forgemeshlabs/aso-audit-mcp/blob/main/SECURITY.md

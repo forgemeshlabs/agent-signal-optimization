@@ -162,7 +162,7 @@ This site currently publishes the core static ASO signals:
 - Public auth, payment, and status notes
 - JSON-LD structured data
 
-It also publishes an A2A agent card, an MCP server card, and an ASO badge report. The automated scanner is installable as a local MCP server (`npx -y @forgemeshlabs/aso-audit-mcp`). The site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.
+It also publishes an A2A agent card, an MCP server card, and an ASO badge report. The automated scanner is installable as a local MCP server (`npx -y @forgemeshlabs/aso-audit-mcp`). The hosted scanner lives at [aso.forgemesh.io](https://aso.forgemesh.io) with a free JSON API (`GET /api/scan?url=`, OpenAPI at `/api/openapi.json`). The framework site itself does not expose OAuth, a hosted A2A endpoint, or an x402 payment endpoint.
 
 ## Use This Pattern
 

@@ -22,7 +22,8 @@
     {
       "id": "aso-scanner",
       "name": "ASO Scanner",
-      "description": "Self-assessment scanner for mapping public service signals to the Agent Readiness Index."
+      "description": "Hosted ASO Score scanner (web + free JSON API) mapping public service signals to the Agent Readiness Index.",
+      "url": "https://aso.forgemesh.io/"
     },
     {
       "id": "aso-audits",

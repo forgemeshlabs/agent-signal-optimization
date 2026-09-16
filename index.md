@@ -43,4 +43,4 @@ ASO tracks the public artifacts agents increasingly inspect:
 
 This site currently publishes the core static ASO signals: `robots.txt`, `sitemap.xml`, `llms.txt`, `agent.json`, `.well-known` manifests (including an A2A agent card, an MCP server card, and an ASO badge report), Markdown framework source, score documentation, response `Link` headers, a beta score badge, and public auth/payment/status notes.
 
-The automated ASO scanner ships as an installable MCP server: `npx -y @forgemeshlabs/aso-audit-mcp`. It runs locally in your MCP client. This site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.
+The automated ASO scanner is hosted at https://aso.forgemesh.io (web checker + free JSON API `GET /api/scan?url=`) and ships as an installable MCP server: `npx -y @forgemeshlabs/aso-audit-mcp`. It runs locally in your MCP client. This site does not currently expose a public API, OAuth flow, hosted A2A endpoint, or x402 payment endpoint.

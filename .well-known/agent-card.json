@@ -1,6 +1,6 @@
 {
-  "name": "ASO Scanner",
-  "description": "Agent Signal Optimization reference agent. Scans a public site or API across 34 checks and returns an Agent Readiness Report with a 0-100 ASO Score, maturity level, and prioritized fix plan. It also audits individual x402 v2 endpoints without spending. A hosted A2A endpoint is not published yet; the scanner currently runs locally as the @forgemeshlabs/aso-audit-mcp MCP server.",
+  "name": "Agent Signal Optimization",
+  "description": "Agent Signal Optimization reference agent. Scans a public site or API across 34 checks and returns an Agent Readiness Report with a 0-100 ASO Score, maturity level, and prioritized fix plan. It also audits individual x402 v2 endpoints without spending. Hosted scanner: https://aso.forgemesh.io (web + free JSON API at /api/scan). Also runs locally as the @forgemeshlabs/aso-audit-mcp MCP server. No hosted A2A endpoint yet.",
   "supportedInterfaces": [
     {
       "url": "https://agentsignaloptimization.com/",
@@ -19,43 +19,81 @@
     "pushNotifications": false,
     "extensions": []
   },
-  "defaultInputModes": ["text/plain"],
-  "defaultOutputModes": ["application/json", "text/markdown"],
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/markdown"
+  ],
   "skills": [
     {
       "id": "scan_site",
       "name": "Scan site for agent readiness",
       "description": "Run a full ASO scan against a URL and return the Agent Readiness Report: score, level, six-pillar breakdown, and all 33 checks with evidence and recommendations.",
-      "tags": ["aso", "agent-readiness", "scanner", "audit"],
-      "examples": ["Scan example.com for agent readiness", "What's my ASO score?"]
+      "tags": [
+        "aso",
+        "agent-readiness",
+        "scanner",
+        "audit"
+      ],
+      "examples": [
+        "Scan example.com for agent readiness",
+        "What's my ASO score?"
+      ]
     },
     {
       "id": "get_fix_plan",
       "name": "Get prioritized fix plan",
       "description": "Return a prioritized remediation plan with templates for robots.txt, llms.txt, agent.json, and other ASO signals.",
-      "tags": ["aso", "remediation", "fix-plan"],
-      "examples": ["Give me a fix plan to make my site agent-ready"]
+      "tags": [
+        "aso",
+        "remediation",
+        "fix-plan"
+      ],
+      "examples": [
+        "Give me a fix plan to make my site agent-ready"
+      ]
     },
     {
       "id": "check_signal",
       "name": "Check a single signal",
       "description": "Run one specific ASO check, such as a2a-agent-card, llms-txt, or x402, against a URL.",
-      "tags": ["aso", "signal", "check"],
-      "examples": ["Check only the llms-txt signal for example.com"]
+      "tags": [
+        "aso",
+        "signal",
+        "check"
+      ],
+      "examples": [
+        "Check only the llms-txt signal for example.com"
+      ]
     },
     {
       "id": "get_aso_framework",
       "name": "Explain the ASO framework",
       "description": "Return the ASO rubric: pillars, weights, maturity levels, and certification thresholds.",
-      "tags": ["aso", "framework", "rubric"],
-      "examples": ["Show me the ASO scoring rubric"]
+      "tags": [
+        "aso",
+        "framework",
+        "rubric"
+      ],
+      "examples": [
+        "Show me the ASO scoring rubric"
+      ]
     },
     {
       "id": "audit_x402_endpoint",
       "name": "Audit x402 v2 endpoint",
       "description": "Run a deterministic no-spend audit of one paid endpoint and return a score, grade, compliance verdict, per-check results, and observed protocol metadata.",
-      "tags": ["x402", "payments", "compliance", "audit"],
-      "examples": ["Audit https://example.com/paid for x402 v2 compliance"]
+      "tags": [
+        "x402",
+        "payments",
+        "compliance",
+        "audit"
+      ],
+      "examples": [
+        "Audit https://example.com/paid for x402 v2 compliance"
+      ]
     }
   ],
   "additionalInterfaces": [

@@ -2304,3 +2304,11 @@ input[type="checkbox"] {
     padding: 10px 10px;
   }
 }
+
+
+/* Hosted scanner form (aso.forgemesh.io) */
+.scan-form { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0 0 0.75rem; }
+.scan-form label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.scan-form input { flex: 1 1 280px; font: inherit; font-size: 1rem; padding: 0.9rem 1rem; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--panel); color: var(--ink); }
+.scan-form input:focus { outline: none; border-color: var(--accent); }
+.scan-form-note { margin-bottom: 2rem; }

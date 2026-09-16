@@ -35,6 +35,16 @@ export default {
     }
 
     const response = await env.ASSETS.fetch(request);
+    // Machine-readable paths must 404 as JSON, never fall back to the HTML shell
+    // (scanners read a 200 HTML body at /.well-known/* as a broken manifest).
+    const ct = response.headers.get("content-type") || "";
+    const machinePath = url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/api/") || /\.(json|txt|xml|md)$/.test(url.pathname);
+    if (machinePath && ct.includes("text/html")) {
+      return new Response(JSON.stringify({ error: "not_found", path: url.pathname }), {
+        status: 404,
+        headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" }
+      });
+    }
     const headers = new Headers(response.headers);
     headers.append("vary", "Accept");
 

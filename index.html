@@ -109,7 +109,7 @@
             </p>
             <div class="hero-actions" aria-label="Primary actions">
               <a class="button primary" href="#scanner">
-                Take a free ASO self-assessment
+                Scan your site free
                 <span aria-hidden="true">scan</span>
               </a>
               <a class="button secondary" href="#readiness">
@@ -872,7 +872,7 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
       <section class="band scanner-band" id="scanner">
         <div class="section-heading align-left">
           <p class="section-label">ASO Scanner</p>
-          <h2>Take the free ASO self-assessment.</h2>
+          <h2>Get your ASO Score in under a minute.</h2>
           <p>
             This is the quick gut check for whether your site is visible to the
             next wave of AI-mediated traffic. Mark the public signals you
@@ -889,6 +889,16 @@ IF SIGNALS ARE VERIFIED ->  find | cite | recommend | invoke | pay | remember</c
             software before a person clicks.
           </p>
         </div>
+
+        <form class="scan-form" action="https://aso.forgemesh.io/" method="get" aria-label="Scan a site for its ASO Score">
+          <label for="scan-url">Website URL</label>
+          <input id="scan-url" name="url" type="url" inputmode="url" placeholder="https://yourdomain.com" required>
+          <button class="button primary" type="submit">Get my ASO Score <span aria-hidden="true">scan</span></button>
+        </form>
+        <p class="install-note scan-form-note">
+          Hosted scanner, free, about 10-40 seconds: 34 checks, ASO Score, level, fix plan, shareable report.
+          Agents can call it directly: <code>GET https://aso.forgemesh.io/api/scan?url=…</code>
+        </p>
 
         <div class="scanner-install">
           <div class="terminal-card" aria-label="ASO scanner install commands">

@@ -1,0 +1,29 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://agentsignaloptimization.com/",
+      "service-desc": [
+        {
+          "href": "https://aso.forgemesh.io/api/openapi.json",
+          "type": "application/openapi+json",
+          "title": "ASO Score Scanner API (hosted)"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://agentsignaloptimization.com/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://agentsignaloptimization.com/ASO.md",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://agentsignaloptimization.com/.well-known/status"
+        }
+      ]
+    }
+  ]
+}
